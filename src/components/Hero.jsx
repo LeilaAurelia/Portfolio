@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-violet-400 via-violet-400/40 to-transparent rounded-[60px] overflow-hidden">
             <img
-              src="/public/assets/picture/Perfil-Photoroom.png"
+              src="/assets/picture/Perfil-Photoroom.png"
               alt=""
               width={656}
               height={800}
