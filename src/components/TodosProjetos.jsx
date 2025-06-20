@@ -5,34 +5,34 @@ import { useEffect } from "react";
 
 const projetos = [
   {
-    imgSrc: "/src/assets/projects/Biocell.png",
+    imgSrc: "/assets/projects/Biocell.png",
     title: "Biocell",
     tags: ["Instagram", "Copywriting"],
     projectLink:
       "https://www.instagram.com/p/CTM5sWKtjGf/?igsh=MWhmMnRhZnV6ZmVvNA%3D%3D",
   },
   {
-    imgSrc: "/src/assets/projects/BTAtacado.png",
+    imgSrc: "/assets/projects/BTAtacado.png",
     title: "BT Atacado",
     tags: ["Instagram", "Copywriting"],
     projectLink:
       "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
   },
   {
-    imgSrc: "/src/assets/projects/CVC Alagoas.jpg",
+    imgSrc: "/assets/projects/CVC Alagoas.jpg",
     title: "CVC Alagoas",
     tags: ["Comercial", "Copywriting"],
     projectLink:
       "https://www.instagram.com/cvc.al.maceiocentro/",
   },
   {
-    imgSrc: "/src/assets/projects/cvc ivete.jpg",
+    imgSrc: "/assets/projects/cvc ivete.jpg",
     title: "CVC Alagoas",
     tags: ["Comercial", "Copywriting"],
     projectLink: "https://www.instagram.com/cvc.al.maceiocentro/",
   },
   {
-    imgSrc: "/src/assets/projects/Dra.Elisangela.png",
+    imgSrc: "/assets/projects/Dra.Elisangela.png",
     title: "Dra. Elisangela Menezes",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -40,21 +40,21 @@ const projetos = [
   },
 
   {
-    imgSrc: "/src/assets/projects/draelisangela.jpg",
+    imgSrc: "/assets/projects/draelisangela.jpg",
     title: "Dra. Elisangela Menezes",
     tags: ["Comercial", "Copywriting"],
     projectLink: "https://www.instagram.com/p/C0JoFeIx0JL/",
   },
 
    {
-    imgSrc: "/src/assets/projects/DanieleFerreiraa.jpg",
+    imgSrc: "/assets/projects/DanieleFerreiraa.jpg",
     title: "Dra. Elisangela Menezes",
     tags: ["Comercial", "Copywriting"],
     projectLink: "https://www.facebook.com/watch/?v=474477527924203",
   },
 
   {
-    imgSrc: "/src/assets/projects/escolainternacionalfpolis.png",
+    imgSrc: "/assets/projects/escolainternacionalfpolis.png",
     title: "Escola Internacional Florianópolis ",
     tags: ["Escolar", "Copywriting"],
     projectLink:
@@ -62,7 +62,7 @@ const projetos = [
   },
 
    {
-    imgSrc: "/src/assets/projects/Fpolis.jpg",
+    imgSrc: "/assets/projects/Fpolis.jpg",
     title: "Escola Internacional Florianópolis ",
     tags: ["Escolar", "Copywriting"],
     projectLink:
@@ -70,7 +70,7 @@ const projetos = [
   },
 
     {
-    imgSrc: "/src/assets/projects/globalprotecaoveicular.jpg",
+    imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
     title: "Global Proteção Veícular ",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -78,7 +78,7 @@ const projetos = [
   },
 
     {
-    imgSrc: "/src/assets/projects/IntelBras.jpg",
+    imgSrc: "/assets/projects/IntelBras.jpg",
     title: "IntelBras ",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -86,7 +86,7 @@ const projetos = [
   },
 
       {
-    imgSrc: "/src/assets/projects/joolt.jpg",
+    imgSrc: "/assets/projects/joolt.jpg",
     title: "Joolt Indaiatuba ",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -94,7 +94,7 @@ const projetos = [
   },
 
      {
-    imgSrc: "/src/assets/projects/LTMarketing.jpg",
+    imgSrc: "/assets/projects/LTMarketing.jpg",
     title: "LT Marketing",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -102,7 +102,7 @@ const projetos = [
   },
 
    {
-    imgSrc: "/src/assets/projects/Miriangontijoadv.jpg",
+    imgSrc: "/assets/projects/Miriangontijoadv.jpg",
     title: "Mírian Gontijo Advogados",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -110,7 +110,7 @@ const projetos = [
   },
 
    {
-    imgSrc: "/src/assets/projects/Neodent.png",
+    imgSrc: "/assets/projects/Neodent.png",
     title: "Neodent",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -118,7 +118,7 @@ const projetos = [
   },
 
   {
-    imgSrc: "/src/assets/projects/Patense.jpg",
+    imgSrc: "/assets/projects/Patense.jpg",
     title: "Patense",
     tags: ["Comercial", "Copywriting"],
     projectLink:
@@ -126,7 +126,7 @@ const projetos = [
   },
 
   {
-    imgSrc: "/src/assets/projects/pajuçara.jpg",
+    imgSrc: "/assets/projects/pajuçara.jpg",
     title: "Pajuçara Management",
     tags: ["Instagram", "Copywriting"],
     projectLink:
@@ -134,7 +134,7 @@ const projetos = [
   },
 
   {
-    imgSrc: "/src/assets/projects/PetsMeelon.jpg",
+    imgSrc: "/assets/projects/PetsMeelon.jpg",
     title: "Pets Mellon",
     tags: ["Instagram", "Copywriting"],
     projectLink:
@@ -142,7 +142,7 @@ const projetos = [
   },
 
   {
-    imgSrc: "/src/assets/projects/Petsmellon.png",
+    imgSrc: "/assets/projects/Petsmellon.png",
     title: "Pets Mellon",
     tags: ["Instagram", "Copywriting"],
     projectLink:
@@ -150,7 +150,7 @@ const projetos = [
   },
 
    {
-    imgSrc: "/src/assets/projects/Dindin.jpg",
+    imgSrc: "/assets/projects/Dindin.jpg",
     title: "Quero dindin",
     tags: ["Instagram", "Copywriting"],
     projectLink:
@@ -158,7 +158,7 @@ const projetos = [
   },
 
    {
-    imgSrc: "/src/assets/projects/TransTriangulo.jpg",
+    imgSrc: "/assets/projects/TransTriangulo.jpg",
     title: "TransTriangulo",
     tags: ["Instagram", "Copywriting"],
     projectLink:

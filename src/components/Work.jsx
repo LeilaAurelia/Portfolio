@@ -5,40 +5,40 @@ import { animateScroll as scroll } from "react-scroll";
 
 const works = [
   {
-    imgSrc: "/src/assets/projects/inumeraveis.png",
+    imgSrc: "/assets/projects/inumeraveis.png",
     title: "Inumeraveis Alagoas",
     tags: ["Escrita pesada", "Memorias"],
     projectLink:
       "https://inumeraveis.com.br/antonio-ferreira-de-amorim/",
   },
   {
-    imgSrc: "/src/assets/projects/mandafigurinha.jpg",
+    imgSrc: "/assets/projects/mandafigurinha.jpg",
     title: "Manda figurinha",
     tags: ["Instagram", "Copywriting"],
     projectLink: "https://mandafigurinha.wixsite.com/final",
   },
   {
-    imgSrc: "/src/assets/projects/neodent2.png",
+    imgSrc: "/assets/projects/neodent2.png",
     title: "Neodent global",
     tags: ["Instagram", "Copywriting"],
     projectLink: "https://www.instagram.com/p/CNPfERTl2ne/?utm_source=ig_embed&utm_campaign=loading",
   },
   {
-    imgSrc: "/src/assets/projects/devoltapracasa.jpg",
+    imgSrc: "/assets/projects/devoltapracasa.jpg",
     title: "De volta pra casa",
     tags: ["Comercial", "Copywriting"],
     projectLink:
       "https://circuladoralagoas.wordpress.com/2018/09/05/de-volta-pra-casa/",
   },
   {
-    imgSrc: "/src/assets/projects/inumeraveis.png",
+    imgSrc: "/assets/projects/inumeraveis.png",
     title: "Inumeraveis Alagoas",
     tags: ["Escrita pesada", "Memorias"],
     projectLink:
       "https://inumeraveis.com.br/maria-aparecida-de-oliveira-holanda/",
   },
   {
-    imgSrc: "/src/assets/projects/DanieleFerreira.jpg",
+    imgSrc: "/assets/projects/DanieleFerreira.jpg",
     title: "Daniele Ferreira",
     tags: ["Político", "Copywriting"],
     projectLink:

@@ -21,7 +21,7 @@ const Hero = () => {
           </h2>
           <div className="flex items-center gap-3">
             <ButtonPrimary
-              href="/Curriculo_Leila_Falcao.pdf"
+              href="/assets/curriculo/Curriculo_Leila_Falcão.pdf"
               target="_blank"
               label="Curriculo"
               icon="download"
@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-violet-400 via-violet-400/40 to-transparent rounded-[60px] overflow-hidden">
             <img
-              src="/src/assets/picture/Perfil-Photoroom.png"
+              src="/public/assets/picture/Perfil-Photoroom.png"
               alt=""
               width={656}
               height={800}
