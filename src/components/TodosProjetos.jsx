@@ -4,99 +4,81 @@ import { ProjectCard } from "./ProjectCard";
 import { useEffect } from "react";
 
 const projetos = [
-  {
-    imgSrc: "/assets/projects/Biocell.png",
-    title: "Biocell",
-    tags: ["Instagram", "Copywriting"],
-    projectLink:
-      "https://www.instagram.com/p/CTM5sWKtjGf/?igsh=MWhmMnRhZnV6ZmVvNA%3D%3D",
-  },
-  {
-    imgSrc: "/assets/projects/BTAtacado.png",
-    title: "BT Atacado",
-    tags: ["Instagram", "Copywriting"],
-    projectLink:
-      "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
-  },
-  {
-    imgSrc: "/assets/projects/CVC Alagoas.jpg",
-    title: "CVC Alagoas",
-    tags: ["Comercial", "Copywriting"],
-    projectLink:
-      "https://www.instagram.com/cvc.al.maceiocentro/",
-  },
+
+
   {
     imgSrc: "/assets/projects/cvc ivete.jpg",
-    title: "CVC Alagoas",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Turismo"],
     projectLink: "https://www.instagram.com/cvc.al.maceiocentro/",
   },
   {
     imgSrc: "/assets/projects/Dra.Elisangela.png",
-    title: "Dra. Elisangela Menezes",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Saúde"],
     projectLink:
       "https://www.instagram.com/p/ClRhHSMr7bs/?igsh=MW40ZmVyYjk0M3JkaA%3D%3D",
   },
 
   {
     imgSrc: "/assets/projects/draelisangela.jpg",
-    title: "Dra. Elisangela Menezes",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Saúde"],
     projectLink: "https://www.instagram.com/p/C0JoFeIx0JL/",
   },
 
    {
     imgSrc: "/assets/projects/DanieleFerreiraa.jpg",
-    title: "Dra. Elisangela Menezes",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Saúde"],
     projectLink: "https://www.facebook.com/watch/?v=474477527924203",
+  },
+
+    {
+    imgSrc: "/assets/projects/DanieleFerreira.jpg",
+    tags: ["Político"],
+    projectLink:
+      "https://www.facebook.com/danieleferreira.pe/photos/marque-aqui-seus-amigos-para-votar-1040-e-fazer-pernambuco-mais-forte-para-os-pe/139606788802759/",
+  },
+
+    {
+    imgSrc: "/assets/projects/devoltapracasa.jpg",
+    tags: ["Comercial"],
+    projectLink:
+      "https://circuladoralagoas.wordpress.com/2018/09/05/de-volta-pra-casa/",
   },
 
   {
     imgSrc: "/assets/projects/escolainternacionalfpolis.png",
-    title: "Escola Internacional Florianópolis ",
-    tags: ["Escolar", "Copywriting"],
+    tags: ["Escolar"],
     projectLink:
       "https://www.instagram.com/p/CaR18gNrErf/?igsh=MXV3OWoydHplcDFrdQ%3D%3D",
   },
 
    {
     imgSrc: "/assets/projects/Fpolis.jpg",
-    title: "Escola Internacional Florianópolis ",
-    tags: ["Escolar", "Copywriting"],
+    tags: ["Escolar"],
     projectLink:
       "https://www.instagram.com/p/Cb0UKWQAnwB/",
   },
 
-    {
-    imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
-    title: "Global Proteção Veícular ",
-    tags: ["Comercial", "Copywriting"],
-    projectLink:
-      "https://www.instagram.com/p/CckgYukrx5x/",
-  },
+
 
     {
-    imgSrc: "/assets/projects/IntelBras.jpg",
-    title: "IntelBras ",
-    tags: ["Comercial", "Copywriting"],
+    imgSrc: "/assets/projects/inumeraveis.png",
+    tags: ["Escrita pesada"],
     projectLink:
-      "https://www.instagram.com/p/Cg2e3zBJwUx/",
+      "https://inumeraveis.com.br/antonio-ferreira-de-amorim/",
   },
 
-      {
-    imgSrc: "/assets/projects/joolt.jpg",
-    title: "Joolt Indaiatuba ",
-    tags: ["Comercial", "Copywriting"],
+  {
+    imgSrc: "/assets/projects/inumeraveis.png",
+    tags: ["Escrita pesada"],
     projectLink:
-      "https://www.instagram.com/p/CsJGQfxsClR/",
+      "https://inumeraveis.com.br/maria-aparecida-de-oliveira-holanda/",
   },
+
 
      {
     imgSrc: "/assets/projects/LTMarketing.jpg",
     title: "LT Marketing",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Marketing"],
     projectLink:
       "https://www.instagram.com/agencialt_mkt/",
   },
@@ -104,66 +86,72 @@ const projetos = [
    {
     imgSrc: "/assets/projects/Miriangontijoadv.jpg",
     title: "Mírian Gontijo Advogados",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Comercial"],
     projectLink:
       "https://www.instagram.com/tv/Chk0NLIMzhp/?igsh=MW02cnAzbmdmM3ZkZg%3D%3D",
   },
 
+    {
+    imgSrc: "/assets/projects/mandafigurinha.jpg",
+    tags: ["Artigo"],
+    projectLink: "https://mandafigurinha.wixsite.com/final",
+  },
+
    {
     imgSrc: "/assets/projects/Neodent.png",
-    title: "Neodent",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Comercial"],
     projectLink:
       "https://www.instagram.com/p/CUfFFZftmXq/?igsh=MWZ4a3Vic2p5NWF6dw%3D%3D",
   },
 
+   {
+    imgSrc: "/assets/projects/neodent2.png",
+    tags: ["Comercial"],
+    projectLink: "https://www.instagram.com/p/CNPfERTl2ne/?utm_source=ig_embed&utm_campaign=loading",
+  },
+
   {
     imgSrc: "/assets/projects/Patense.jpg",
-    title: "Patense",
-    tags: ["Comercial", "Copywriting"],
+    tags: ["Comercial"],
     projectLink:
       "https://www.instagram.com/tv/Cis_h55rv78/",
   },
 
   {
     imgSrc: "/assets/projects/pajuçara.jpg",
-    title: "Pajuçara Management",
-    tags: ["Instagram", "Copywriting"],
+    tags: ["Eventos"],
     projectLink:
       "https://management.pajucara.com/",
   },
 
   {
     imgSrc: "/assets/projects/PetsMeelon.jpg",
-    title: "Pets Mellon",
-    tags: ["Instagram", "Copywriting"],
+    tags: ["Comercial"],
     projectLink:
       "https://www.instagram.com/p/CkOi_8zB0g8/?img_index=1",
   },
 
   {
     imgSrc: "/assets/projects/Petsmellon.png",
-    title: "Pets Mellon",
-    tags: ["Instagram", "Copywriting"],
+    tags: ["Comercial"],
     projectLink:
       "https://www.instagram.com/reel/CztKue1NTk5/?igsh=NGgxMjFsOHV0emhs",
   },
 
    {
     imgSrc: "/assets/projects/Dindin.jpg",
-    title: "Quero dindin",
-    tags: ["Instagram", "Copywriting"],
+    tags: ["Comercial"],
     projectLink:
       "https://www.instagram.com/reel/CfTv2MyjBMn/",
   },
 
    {
     imgSrc: "/assets/projects/TransTriangulo.jpg",
-    title: "TransTriangulo",
-    tags: ["Instagram", "Copywriting"],
+    tags: ["Transporte"],
     projectLink:
       "https://www.instagram.com/p/Cwxac5cMvCj/",
   },
+  
   // Adicione mais aqui...
 ];
 

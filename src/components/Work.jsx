@@ -4,46 +4,53 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
 const works = [
+
   {
-    imgSrc: "/assets/projects/inumeraveis.png",
-    title: "Inumeraveis Alagoas",
-    tags: ["Escrita pesada", "Memorias"],
+    imgSrc: "/assets/projects/Biocell.png",
+    tags: ["Comercial"],
     projectLink:
-      "https://inumeraveis.com.br/antonio-ferreira-de-amorim/",
+      "https://www.instagram.com/p/CTM5sWKtjGf/?igsh=MWhmMnRhZnV6ZmVvNA%3D%3D",
   },
-  {
-    imgSrc: "/assets/projects/mandafigurinha.jpg",
-    title: "Manda figurinha",
-    tags: ["Instagram", "Copywriting"],
-    projectLink: "https://mandafigurinha.wixsite.com/final",
-  },
-  {
-    imgSrc: "/assets/projects/neodent2.png",
-    title: "Neodent global",
-    tags: ["Instagram", "Copywriting"],
-    projectLink: "https://www.instagram.com/p/CNPfERTl2ne/?utm_source=ig_embed&utm_campaign=loading",
-  },
-  {
-    imgSrc: "/assets/projects/devoltapracasa.jpg",
-    title: "De volta pra casa",
-    tags: ["Comercial", "Copywriting"],
+
+    {
+    imgSrc: "/assets/projects/BTAtacado.png",
+    tags: ["Comercial"],
     projectLink:
-      "https://circuladoralagoas.wordpress.com/2018/09/05/de-volta-pra-casa/",
+      "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
   },
-  {
-    imgSrc: "/assets/projects/inumeraveis.png",
-    title: "Inumeraveis Alagoas",
-    tags: ["Escrita pesada", "Memorias"],
+
+    {
+    imgSrc: "/assets/projects/CVC Alagoas.jpg",
+    tags: ["Turismo"],
     projectLink:
-      "https://inumeraveis.com.br/maria-aparecida-de-oliveira-holanda/",
+      "https://www.instagram.com/cvc.al.maceiocentro/",
   },
-  {
-    imgSrc: "/assets/projects/DanieleFerreira.jpg",
-    title: "Daniele Ferreira",
-    tags: ["Político", "Copywriting"],
+
+     {
+    imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
+    tags: ["Segurança"],
     projectLink:
-      "https://www.facebook.com/danieleferreira.pe/photos/marque-aqui-seus-amigos-para-votar-1040-e-fazer-pernambuco-mais-forte-para-os-pe/139606788802759/",
+      "https://www.instagram.com/p/CckgYukrx5x/",
   },
+
+      {
+    imgSrc: "/assets/projects/IntelBras.jpg",
+    tags: ["Segurança"],
+    projectLink:
+      "https://www.instagram.com/p/Cg2e3zBJwUx/",
+  },
+
+       {
+    imgSrc: "/assets/projects/joolt.jpg",
+    tags: ["Saúde"],
+    projectLink:
+      "https://www.instagram.com/p/CsJGQfxsClR/",
+  },
+
+ 
+
+  
+
 ];
 
 const Work = () => {
