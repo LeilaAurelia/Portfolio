@@ -13,47 +13,47 @@ const projetos = [
   },
   {
     imgSrc: "/assets/projects/Dra.Elisangela.png",
-    tags: ["Saúde"],
+    tags: ["Marketing médico"],
     projectLink:
       "https://www.instagram.com/p/ClRhHSMr7bs/?igsh=MW40ZmVyYjk0M3JkaA%3D%3D",
   },
 
   {
     imgSrc: "/assets/projects/draelisangela.jpg",
-    tags: ["Saúde"],
+    tags: ["Saúde infantil"],
     projectLink: "https://www.instagram.com/p/C0JoFeIx0JL/",
   },
 
    {
     imgSrc: "/assets/projects/DanieleFerreiraa.jpg",
-    tags: ["Saúde"],
+    tags: ["Camapanha política"],
     projectLink: "https://www.facebook.com/watch/?v=474477527924203",
   },
 
     {
     imgSrc: "/assets/projects/DanieleFerreira.jpg",
-    tags: ["Político"],
+    tags: ["Camapanha política"],
     projectLink:
       "https://www.facebook.com/danieleferreira.pe/photos/marque-aqui-seus-amigos-para-votar-1040-e-fazer-pernambuco-mais-forte-para-os-pe/139606788802759/",
   },
 
     {
     imgSrc: "/assets/projects/devoltapracasa.jpg",
-    tags: ["Comercial"],
+    tags: ["Reportagem"],
     projectLink:
       "https://circuladoralagoas.wordpress.com/2018/09/05/de-volta-pra-casa/",
   },
 
   {
     imgSrc: "/assets/projects/escolainternacionalfpolis.png",
-    tags: ["Escolar"],
+    tags: ["Educação bilíngue"],
     projectLink:
       "https://www.instagram.com/p/CaR18gNrErf/?igsh=MXV3OWoydHplcDFrdQ%3D%3D",
   },
 
    {
     imgSrc: "/assets/projects/Fpolis.jpg",
-    tags: ["Escolar"],
+    tags: ["Educação bilíngue"],
     projectLink:
       "https://www.instagram.com/p/Cb0UKWQAnwB/",
   },
@@ -62,14 +62,14 @@ const projetos = [
 
     {
     imgSrc: "/assets/projects/inumeraveis.png",
-    tags: ["Escrita pesada"],
+    tags: ["Escrita sensível"],
     projectLink:
       "https://inumeraveis.com.br/antonio-ferreira-de-amorim/",
   },
 
   {
     imgSrc: "/assets/projects/inumeraveis.png",
-    tags: ["Escrita pesada"],
+    tags: ["Escrita sensível"],
     projectLink:
       "https://inumeraveis.com.br/maria-aparecida-de-oliveira-holanda/",
   },
@@ -78,41 +78,40 @@ const projetos = [
      {
     imgSrc: "/assets/projects/LTMarketing.jpg",
     title: "LT Marketing",
-    tags: ["Marketing"],
+    tags: ["Infoprodutos"],
     projectLink:
       "https://www.instagram.com/agencialt_mkt/",
   },
 
    {
     imgSrc: "/assets/projects/Miriangontijoadv.jpg",
-    title: "Mírian Gontijo Advogados",
-    tags: ["Comercial"],
+    tags: ["Jurídico"],
     projectLink:
       "https://www.instagram.com/tv/Chk0NLIMzhp/?igsh=MW02cnAzbmdmM3ZkZg%3D%3D",
   },
 
     {
     imgSrc: "/assets/projects/mandafigurinha.jpg",
-    tags: ["Artigo"],
+    tags: ["Reportagem"],
     projectLink: "https://mandafigurinha.wixsite.com/final",
   },
 
    {
     imgSrc: "/assets/projects/Neodent.png",
-    tags: ["Comercial"],
+    tags: ["Odontológico"],
     projectLink:
       "https://www.instagram.com/p/CUfFFZftmXq/?igsh=MWZ4a3Vic2p5NWF6dw%3D%3D",
   },
 
    {
     imgSrc: "/assets/projects/neodent2.png",
-    tags: ["Comercial"],
+    tags: ["Odontológico"],
     projectLink: "https://www.instagram.com/p/CNPfERTl2ne/?utm_source=ig_embed&utm_campaign=loading",
   },
 
   {
     imgSrc: "/assets/projects/Patense.jpg",
-    tags: ["Comercial"],
+    tags: ["Agronegócio"],
     projectLink:
       "https://www.instagram.com/tv/Cis_h55rv78/",
   },
@@ -126,28 +125,28 @@ const projetos = [
 
   {
     imgSrc: "/assets/projects/PetsMeelon.jpg",
-    tags: ["Comercial"],
+    tags: ["Pets"],
     projectLink:
       "https://www.instagram.com/p/CkOi_8zB0g8/?img_index=1",
   },
 
   {
     imgSrc: "/assets/projects/Petsmellon.png",
-    tags: ["Comercial"],
+    tags: ["Pets"],
     projectLink:
       "https://www.instagram.com/reel/CztKue1NTk5/?igsh=NGgxMjFsOHV0emhs",
   },
 
    {
     imgSrc: "/assets/projects/Dindin.jpg",
-    tags: ["Comercial"],
+    tags: ["Crédito"],
     projectLink:
       "https://www.instagram.com/reel/CfTv2MyjBMn/",
   },
 
    {
     imgSrc: "/assets/projects/TransTriangulo.jpg",
-    tags: ["Transporte"],
+    tags: ["Agronegócio"],
     projectLink:
       "https://www.instagram.com/p/Cwxac5cMvCj/",
   },

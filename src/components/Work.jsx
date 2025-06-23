@@ -7,14 +7,14 @@ const works = [
 
   {
     imgSrc: "/assets/projects/Biocell.png",
-    tags: ["Comercial"],
+    tags: ["Biotecnologia"],
     projectLink:
       "https://www.instagram.com/p/CTM5sWKtjGf/?igsh=MWhmMnRhZnV6ZmVvNA%3D%3D",
   },
 
     {
     imgSrc: "/assets/projects/BTAtacado.png",
-    tags: ["Comercial"],
+    tags: ["Varejo alimentar"],
     projectLink:
       "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
   },
@@ -28,7 +28,7 @@ const works = [
 
      {
     imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
-    tags: ["Segurança"],
+    tags: ["Automotivo"],
     projectLink:
       "https://www.instagram.com/p/CckgYukrx5x/",
   },
@@ -42,7 +42,7 @@ const works = [
 
        {
     imgSrc: "/assets/projects/joolt.jpg",
-    tags: ["Saúde"],
+    tags: ["Fitness"],
     projectLink:
       "https://www.instagram.com/p/CsJGQfxsClR/",
   },
