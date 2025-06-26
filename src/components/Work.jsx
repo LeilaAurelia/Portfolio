@@ -4,53 +4,42 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
 const works = [
-
   {
     imgSrc: "/assets/projects/Biocell.png",
     tags: ["Biotecnologia"],
     projectLink:
       "https://www.instagram.com/p/CTM5sWKtjGf/?igsh=MWhmMnRhZnV6ZmVvNA%3D%3D",
   },
-
-    {
+  {
     imgSrc: "/assets/projects/BTAtacado.png",
-    tags: ["Varejo Varejo de alimentação"],
+    tags: ["Varejo de Alimentação"],
     projectLink:
       "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
   },
-
-    {
+  {
     imgSrc: "/assets/projects/CVC Alagoas.jpg",
     tags: ["Turismo"],
     projectLink:
       "https://www.instagram.com/cvc.al.maceiocentro/",
   },
-
-     {
+  {
     imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
     tags: ["Automotivo"],
     projectLink:
       "https://www.instagram.com/p/CckgYukrx5x/",
   },
-
-      {
+  {
     imgSrc: "/assets/projects/IntelBras.jpg",
     tags: ["Segurança"],
     projectLink:
       "https://www.instagram.com/p/Cg2e3zBJwUx/",
   },
-
-       {
+  {
     imgSrc: "/assets/projects/joolt.jpg",
     tags: ["Fitness"],
     projectLink:
       "https://www.instagram.com/p/CsJGQfxsClR/",
   },
-
- 
-
-  
-
 ];
 
 const Work = () => {
