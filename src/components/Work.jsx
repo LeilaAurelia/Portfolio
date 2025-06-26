@@ -14,7 +14,7 @@ const works = [
 
     {
     imgSrc: "/assets/projects/BTAtacado.png",
-    tags: ["Varejo alimentar"],
+    tags: ["Varejo Varejo de alimentação"],
     projectLink:
       "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
   },
