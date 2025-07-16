@@ -4,30 +4,31 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
 const works = [
-  {
-    imgSrc: "/assets/projects/Biocell.png",
-    tags: ["Biotecnologia"],
+{
+    imgSrc: "/assets/projects/SuperPlayer.jpg",
+    tags: ["Saúde como Benefício Corporativo"],
     projectLink:
-      "https://www.instagram.com/p/CTM5sWKtjGf/?igsh=MWhmMnRhZnV6ZmVvNA%3D%3D",
+      "https://www.instagram.com/p/DIguYgPtgiA/?img_index=1",
   },
   {
-    imgSrc: "/assets/projects/BTAtacado.png",
-    tags: ["Varejo de Alimentação"],
+    imgSrc: "/assets/projects/SuperPlayerGamer.jpg",
+    tags: ["Público Gamer - B2B e B2C"],
     projectLink:
-      "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
+      "https://www.instagram.com/p/DIjZ5rEJYO2/",
+  },
+   {
+    imgSrc: "/assets/projects/SuperPlayerProvedor.jpg",
+    tags: ["Saúde e Bem Estar"],
+    projectLink:
+      "https://www.instagram.com/p/DIkBW23Jd5V/",
   },
   {
-    imgSrc: "/assets/projects/CVC Alagoas.jpg",
-    tags: ["Turismo"],
+    imgSrc: "/assets/projects/SuperPlayerProvedores2.jpg",
+    tags: ["Seguro para Provedores"],
     projectLink:
-      "https://www.instagram.com/cvc.al.maceiocentro/",
+      "https://www.instagram.com/p/DIzYaA-pSIv/?img_index=1",
   },
-  {
-    imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
-    tags: ["Automotivo"],
-    projectLink:
-      "https://www.instagram.com/p/CckgYukrx5x/",
-  },
+ 
   {
     imgSrc: "/assets/projects/IntelBras.jpg",
     tags: ["Segurança"],

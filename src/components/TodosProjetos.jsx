@@ -4,6 +4,25 @@ import { ProjectCard } from "./ProjectCard";
 import { useEffect } from "react";
 
 const projetos = [
+
+   {
+    imgSrc: "/assets/projects/Biocell.png",
+    tags: ["Biotecnologia"],
+    projectLink:
+      "https://www.instagram.com/p/CTM5sWKtjGf/?igsh=MWhmMnRhZnV6ZmVvNA%3D%3D",
+  },
+  {
+    imgSrc: "/assets/projects/BTAtacado.png",
+    tags: ["Varejo de Alimentação"],
+    projectLink:
+      "https://www.instagram.com/p/CkGQn35uu3d/?igsh=eDk3bHAxYXJybjJp",
+  },
+  {
+    imgSrc: "/assets/projects/CVC Alagoas.jpg",
+    tags: ["Turismo"],
+    projectLink:
+      "https://www.instagram.com/cvc.al.maceiocentro/",
+  },
   {
     imgSrc: "/assets/projects/cvc ivete.jpg",
     tags: ["Turismo"],
@@ -48,6 +67,12 @@ const projetos = [
     tags: ["Educação Bilíngue"],
     projectLink:
       "https://www.instagram.com/p/Cb0UKWQAnwB/",
+  },
+  {
+    imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
+    tags: ["Automotivo"],
+    projectLink:
+      "https://www.instagram.com/p/CckgYukrx5x/",
   },
   {
     imgSrc: "/assets/projects/inumeraveis.png",
@@ -144,7 +169,20 @@ const TodosProjetos = () => {
           Projetos que atuei como social media, copywritter, analista de
           marketing, inbound e endomarketing, gestão de contas, SEO content e
           outros.
+           
         </p>
+
+        <p> <a className="Projetos text-lg font-semibold transition hover:underline w-full mt-10 flex justify-center my-2"
+       style={{
+            background: "-webkit-linear-gradient(0deg, #09090b, #7e22ce)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }} 
+        href="https://drive.google.com/drive/folders/1tD89977YkysOwM2PvFH3ciTemxYjrp82">Mais projetos realizados</a></p>
+
+        
+        
+          
 
         {/* Grid igual Work */}
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
