@@ -158,46 +158,45 @@ const TodosProjetos = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <section className="section min-h-screen pt-20 lg:pt-32">
-      <div className="container">
-        {/* Título com botão voltar */}
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="headline-2">Todos os Projetos</h2>
-        </div>
+    <section className="section min-h-screen pt-20 lg:pt-32 pb-20">
+  <div className="container">
+    {/* Título com botão voltar */}
+    <div className="flex items-center justify-between mb-8">
+      <h2 className="headline-2">Todos os Projetos</h2>
+    </div>
 
-        <p className="mb-10 text-base text-stone-700">
-          Projetos que atuei como social media, copywritter, analista de
-          marketing, inbound e endomarketing, gestão de contas, SEO content e
-          outros.
-           
-        </p>
+    <p className="mb-10 text-base text-stone-700">
+      Projetos que atuei como social media, copywritter, analista de
+      marketing, inbound e endomarketing, gestão de contas, SEO content e
+      outros.
+    </p>
 
-        <p> <a className="Projetos text-lg font-semibold transition hover:underline w-full mt-10 flex justify-center my-2"
-       style={{
-            background: "-webkit-linear-gradient(0deg, #09090b, #7e22ce)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }} 
-        href="https://drive.google.com/drive/folders/1tD89977YkysOwM2PvFH3ciTemxYjrp82">Mais projetos realizados</a></p>
+    {/* Grid igual Work */}
+    <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
+      {projetos.map(({ imgSrc, title, tags, projectLink }, key) => (
+        <ProjectCard
+          key={key}
+          imgSrc={imgSrc}
+          title={title}
+          tags={tags}
+          projectLink={projectLink}
+        />
+      ))}
+    </div>
 
-        
-        
-          
-
-        {/* Grid igual Work */}
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-          {projetos.map(({ imgSrc, title, tags, projectLink }, key) => (
-            <ProjectCard
-              key={key}
-              imgSrc={imgSrc}
-              title={title}
-              tags={tags}
-              projectLink={projectLink}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    {/* Botão projetos */}
+    <div className="flex justify-center mt-10">
+      <a
+        href="https://drive.google.com/drive/folders/1tD89977YkysOwM2PvFH3ciTemxYjrp82"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-primary text-base px-6 py-3 rounded-2xl font-semibold transition hover:scale-105 shadow-lg hover:shadow-xl"
+      >
+         Leia aqui outros projetos →
+      </a>
+    </div>
+  </div>
+</section>
   );
 };
 
