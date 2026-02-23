@@ -1,70 +1,67 @@
 import React from "react";
 
-const aboutItems = [
-  {
-    label: "Projetos concluídos",
-    number: 20,
-  },
-  {
-    label: "Anos de experiência",
-    number: 6,
-  },
-];
-
 const About = () => {
   return (
-    <section id="about"  className="section">
-      <div className="container">
-        <div className="p-7 rounded-2xl md:p-12">
-          <p className="mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-            Sou nordestina e apaixonada por contar histórias. Formada pela
-            Universidade Federal de Alagoas, tenho uma carreira que combina
-            Jornalismo, Copywriting pleno e especialização em Marketing Digital,
-            Branding e Redes Sociais pela Uninassau. 
-          </p>
+    <section id="about" className="pt-16 lg:pt-24">
+      <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-24 items-stretch">
 
-          <div className="flex flex-wrap items-center gap-4 md:gap-7">
-            {aboutItems.map(({ label, number }, key) => (
-              <div key={key}>
-                <div className="flex items-center md:mb-2">
-                  <span className="text-2xl font-semibold md:text-4xl">
-                    {number}
-                  </span>
-                  <span className="text-violet-700 font-semibold md:text-3xl">
-                    +
-                  </span>
-                </div>
+          {/* IMAGEM AJUSTADA */}
+          <div className="flex justify-start">
+            <div className="relative w-full max-w-[520px]">
+              
+              {/* Sombra de fundo mais próxima */}
+              <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl bg-black/5 blur-xl"></div>
 
-                <p className="text-sm text-zinc-950">{label}</p>
+              {/* Moldura branca menor */}
+              <div className="relative bg-white p-3 rounded-3xl shadow-sm">
+                <img
+                  src="/assets/picture/Perfil-Photoroom.png"
+                  alt="Leila Aurelia Falcão de Lima"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </div>
-            ))}
-          </div>
-        </div >
 
-        {/* Seção "Sobre mim" separada com título e descrição */}
-        <div  className="mt-20 rounded-2xl">
-          <h2  className=" headline-2 text-3xl md:text-3xl text-center mb-8 ">
-            Um pouco mais sobre mim
-          </h2>
-          <p className="mb-4 md:mb-8 md:text-xl max-w text-justify">
-            Meu trabalho vai além das palavras. Como jornalista, investigo e
-            relato com precisão e profundidade. Como copywriter, crio narrativas
-            persuasivas que ressoam com o público. Como especialista em
-            marketing, desenvolvo estratégias que conectam marcas e pessoas de
-            maneira autêntica e eficaz. Minha expertise inclui SEO e otimização
-            de conteúdo, copywriting persuasivo, análise de dados e métricas de
-            marketing, planejamento e execução de campanhas de mídia paga, redes
-            sociais, personas e jornada do cliente e produção de gerenciamento
-            de webinars e eventos online.
-            <br />
-            <br />
-            Além de gestão clientes, comunicação corporativa, e estratégias de
-            Inbound Marketing. Consigo utilizar diversas ferramentas e
-            plataformas, como Trello, Canva, Etus, pacote Office, RD Station,
-            HubSpot, ClickUp, Operand, Meta Business, mLabs, Google Analytics,
-            Typeform, Photoshop e outras. E então, vamos juntos transformar
-            ideias em histórias que emocionam, informam e vendem?
-          </p>
+            </div>
+          </div>
+
+          {/* TEXTO */}
+          <div className="max-w-xl flex flex-col justify-center">
+            <p className="text-xs uppercase tracking-widest text-primary mb-4">
+              Quem sou
+            </p>
+
+            <h3 className="text-2xl lg:text-3xl font-serif text-primary mb-6">
+              Leila Aurelia Falcão de Lima
+            </h3>
+
+            <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+              <p>
+                Sou nordestina, formada em Jornalismo pela Universidade Federal de Alagoas, e atuo como Copywriter Pleno com especialização em Marketing Digital, Branding e Redes Sociais.
+              </p>
+
+              <p>
+                Trabalho com SEO, copywriting, análise de métricas, campanhas de mídia paga e Inbound Marketing, criando estratégias que conectam marcas e pessoas — gerando autoridade e vendas.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6">
+              <div className="border border-primary/20 rounded-xl p-6">
+                <div className="text-3xl font-bold text-primary mb-2">+6</div>
+                <p className="text-sm text-muted-foreground leading-tight">
+                  Anos de experiência
+                </p>
+              </div>
+
+              <div className="border border-primary/20 rounded-xl p-6">
+                <div className="text-3xl font-bold text-primary mb-2">+40</div>
+                <p className="text-sm text-muted-foreground leading-tight">
+                  Projetos concluídos
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

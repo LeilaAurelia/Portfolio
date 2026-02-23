@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "./ProjectCard";
-import { useEffect } from "react";
+import { copysData } from "../data/copysData";
+import CopyModal from "./CopyModal";
 
 const projetos = [
-
-   {
+  {
     imgSrc: "/assets/projects/Biocell.png",
     tags: ["Biotecnologia"],
     projectLink:
@@ -20,8 +20,7 @@ const projetos = [
   {
     imgSrc: "/assets/projects/CVC Alagoas.jpg",
     tags: ["Turismo"],
-    projectLink:
-      "https://www.instagram.com/cvc.al.maceiocentro/",
+    projectLink: "https://www.instagram.com/cvc.al.maceiocentro/",
   },
   {
     imgSrc: "/assets/projects/cvc ivete.jpg",
@@ -65,20 +64,17 @@ const projetos = [
   {
     imgSrc: "/assets/projects/Fpolis.jpg",
     tags: ["Educação Bilíngue"],
-    projectLink:
-      "https://www.instagram.com/p/Cb0UKWQAnwB/",
+    projectLink: "https://www.instagram.com/p/Cb0UKWQAnwB/",
   },
   {
     imgSrc: "/assets/projects/globalprotecaoveicular.jpg",
     tags: ["Automotivo"],
-    projectLink:
-      "https://www.instagram.com/p/CckgYukrx5x/",
+    projectLink: "https://www.instagram.com/p/CckgYukrx5x/",
   },
   {
     imgSrc: "/assets/projects/inumeraveis.png",
     tags: ["Escrita Sensível"],
-    projectLink:
-      "https://inumeraveis.com.br/antonio-ferreira-de-amorim/",
+    projectLink: "https://inumeraveis.com.br/antonio-ferreira-de-amorim/",
   },
   {
     imgSrc: "/assets/projects/inumeraveis.png",
@@ -89,8 +85,7 @@ const projetos = [
   {
     imgSrc: "/assets/projects/LTMarketing.jpg",
     tags: ["Infoprodutos"],
-    projectLink:
-      "https://www.instagram.com/agencialt_mkt/",
+    projectLink: "https://www.instagram.com/agencialt_mkt/",
   },
   {
     imgSrc: "/assets/projects/Miriangontijoadv.jpg",
@@ -112,25 +107,23 @@ const projetos = [
   {
     imgSrc: "/assets/projects/neodent2.png",
     tags: ["Odontológico"],
-    projectLink: "https://www.instagram.com/p/CNPfERTl2ne/?utm_source=ig_embed&utm_campaign=loading",
+    projectLink:
+      "https://www.instagram.com/p/CNPfERTl2ne/?utm_source=ig_embed&utm_campaign=loading",
   },
   {
     imgSrc: "/assets/projects/Patense.jpg",
     tags: ["Agronegócio"],
-    projectLink:
-      "https://www.instagram.com/tv/Cis_h55rv78/",
+    projectLink: "https://www.instagram.com/tv/Cis_h55rv78/",
   },
   {
     imgSrc: "/assets/projects/pajuçara.jpg",
     tags: ["Eventos"],
-    projectLink:
-      "https://management.pajucara.com/",
+    projectLink: "https://management.pajucara.com/",
   },
   {
     imgSrc: "/assets/projects/PetsMeelon.jpg",
     tags: ["Pets"],
-    projectLink:
-      "https://www.instagram.com/p/CkOi_8zB0g8/?img_index=1",
+    projectLink: "https://www.instagram.com/p/CkOi_8zB0g8/?img_index=1",
   },
   {
     imgSrc: "/assets/projects/Petsmellon.png",
@@ -141,62 +134,164 @@ const projetos = [
   {
     imgSrc: "/assets/projects/Dindin.jpg",
     tags: ["Crédito"],
-    projectLink:
-      "https://www.instagram.com/reel/CfTv2MyjBMn/",
+    projectLink: "https://www.instagram.com/reel/CfTv2MyjBMn/",
   },
   {
     imgSrc: "/assets/projects/TransTriangulo.jpg",
     tags: ["Agronegócio"],
-    projectLink:
-      "https://www.instagram.com/p/Cwxac5cMvCj/",
+    projectLink: "https://www.instagram.com/p/Cwxac5cMvCj/",
   },
-  // Adicione mais aqui...
 ];
 
+/**
+ * CopyCard — estrutura 100% idêntica ao ProjectCard.
+ * A <figure> usa a imagem enviada (copy-placeholder.jpg)
+ * como thumbnail, igual a qualquer card de projeto.
+ */
+const CopyCard = ({ copy, onClick }) => (
+  <div
+    onClick={onClick}
+    className="relative bg-white border border-primary/10 rounded-xl overflow-hidden
+      hover:border-primary/30 hover:shadow-lg transition-all group cursor-pointer"
+  >
+    {/* ── Mesma <figure> do ProjectCard, com a imagem JPG ── */}
+    <figure className="aspect-square overflow-hidden">
+      <img
+        src="/assets/picture/Wavy_Bus-15_Single-06.jpg"
+        alt="Copy de texto"
+        loading="lazy"
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+    </figure>
+
+    {/* ── Rodapé idêntico ao ProjectCard ── */}
+    <div className="p-6">
+      {/* Badge de categoria */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        <span className="text-xs px-3 py-1 bg-primary/5 text-primary rounded-full font-medium">
+          {copy.category}
+        </span>
+        {copy.tags?.map((tag, i) => (
+          <span
+            key={i}
+            className="text-xs px-3 py-1 bg-primary/5 text-primary rounded-full font-medium"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      {/* Título + botão */}
+      <div className="flex items-center justify-between">
+        <h3 className="text-sm font-medium text-foreground line-clamp-1">
+          {copy.title}
+        </h3>
+        <div
+          className="w-8 h-8 rounded-full bg-primary/10 grid place-items-center
+            text-primary group-hover:bg-primary group-hover:text-primary-foreground
+            transition-colors shrink-0 ml-2"
+        >
+          <span
+            className="material-symbols-rounded text-[16px]"
+            aria-hidden="true"
+          >
+            open_in_new
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 const TodosProjetos = () => {
+  const [selectedCopy, setSelectedCopy] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (copy) => {
+    setSelectedCopy(copy);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedCopy(null), 300);
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <section className="section min-h-screen pt-20 lg:pt-32 pb-20">
-  <div className="container">
-    {/* Título com botão voltar */}
-    <div className="flex items-center justify-between mb-8">
-      <h2 className="headline-2">Todos os Projetos</h2>
-    </div>
+    <>
+      {/* ══ Seção: Todos os Projetos + Copys num grid contínuo ══ */}
+      <section className="w-full min-h-screen pt-20 lg:pt-32 pb-8">
+        <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16">
+          {/* Botão voltar */}
+          <div className="mb-6 sm:mb-8">
+            <Link
+              to="/#work"
+              className="inline-flex items-center gap-1.5 text-sm font-medium
+                text-primary border border-primary/25 rounded-full px-4 py-1.5
+                hover:bg-primary hover:text-white hover:border-primary
+                transition-all duration-200"
+            >
+              <span className="material-symbols-rounded text-[16px]">
+                arrow_back
+              </span>
+              Voltar para projetos
+            </Link>
+          </div>
 
-    <p className="mb-10 text-base text-stone-700">
-      Projetos que atuei como social media, copywritter, analista de
-      marketing, inbound e endomarketing, gestão de contas, SEO content e
-      outros.
-    </p>
+          {/* Título */}
+          <h2 className="headline-2 text-2xl sm:text-3xl lg:text-4xl mb-3 sm:mb-4">
+            Todos os Projetos
+          </h2>
 
-    {/* Grid igual Work */}
-    <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-      {projetos.map(({ imgSrc, title, tags, projectLink }, key) => (
-        <ProjectCard
-          key={key}
-          imgSrc={imgSrc}
-          title={title}
-          tags={tags}
-          projectLink={projectLink}
-        />
-      ))}
-    </div>
+          {/* Descrição */}
+          <p className="mb-8 sm:mb-12 text-sm sm:text-base text-stone-700 leading-relaxed">
+            Projetos que atuei como social media, copywriter, analista de
+            marketing, inbound e endomarketing, gestão de contas, SEO content e
+            outros.
+          </p>
 
-    {/* Botão projetos */}
-    <div className="flex justify-center mt-10">
-      <a
-        href="https://drive.google.com/drive/folders/1tD89977YkysOwM2PvFH3ciTemxYjrp82"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-primary text-base px-6 py-3 rounded-2xl font-semibold transition hover:scale-105 shadow-lg hover:shadow-xl"
-      >
-         Leia aqui outros projetos →
-      </a>
-    </div>
-  </div>
-</section>
+          {/* ── Grid único e contínuo: projetos + copys na sequência ── */}
+          <div
+            className="grid gap-4 sm:gap-5
+              grid-cols-1
+              sm:grid-cols-2
+              md:grid-cols-3
+              xl:grid-cols-4"
+          >
+            {/* Cards de projetos com imagem */}
+            {projetos.map(({ imgSrc, title, tags, projectLink }, key) => (
+              <ProjectCard
+                key={`proj-${key}`}
+                imgSrc={imgSrc}
+                title={title}
+                tags={tags}
+                projectLink={projectLink}
+              />
+            ))}
+
+            {/* Cards de copys — continuam direto após o último projeto */}
+            {copysData.map((copy) => (
+              <CopyCard
+                key={`copy-${copy.id}`}
+                copy={copy}
+                onClick={() => openModal(copy)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Modal */}
+      <CopyModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        copyData={selectedCopy}
+      />
+    </>
   );
 };
 

@@ -1,57 +1,48 @@
 import React from "react";
-
 import { SkillCard } from "./SkillCard";
 
 const skillItem = [
   {
-    label: "SEO e Otimização de Conteúdo",
-    desc: "Melhoria de textos para ranqueamento e alcance orgânico.",
+    label: "SEO & Otimização",
+    desc: "Estratégias de ranqueamento orgânico e otimização de conteúdo para mecanismos de busca.",
+    icon: "search",
   },
   {
-    label: "Copywriting Persuasivo",
-    desc: "Criação de textos que despertam desejo e geram conversões.",
+    label: "Copywriting Estratégico",
+    desc: "Criação de textos persuasivos que convertem leitores em clientes e geram resultados.",
+    icon: "edit_note",
   },
   {
-    label: "Análise de Dados e Métricas de Marketing",
-    desc: "Interpretação de números para decisões estratégicas.",
+    label: "Análise de Marketing",
+    desc: "Interpretação de dados e métricas para decisões estratégicas baseadas em resultados.",
+    icon: "analytics",
   },
   {
-    label: "Desenvolvimento de Personas e Jornada do Cliente",
-    desc: "Mapeamento de perfis e comportamentos do público-alvo.",
-  },
-  {
-    label: "Planejamento e Execução de Campanhas de Mídia Paga",
-    desc: "Estratégia, segmentação e gestão de anúncios.",
-  },
-  {
-    label: "Marketing de Influência",
-    desc: "Parcerias com influenciadores para ampliar o alcance.",
-  },
-  {
-    label: "Produção e Gerenciamento de Webinars e Eventos Online",
-    desc: "Organização de eventos digitais com foco em engajamento.",
-  },
-  {
-    label: "Desenvolvimento e Implementação de Estratégias de Inbound",
-    desc: "Atração de clientes por meio de conteúdo relevante.",
+    label: "Estratégia Digital",
+    desc: "Planejamento e execução de campanhas integradas de marketing digital e inbound.",
+    icon: "campaign",
   },
 ];
 
 const Skill = () => {
   return (
-    <section className="section">
-      <div className="container">
-        <h2 className="headline-3 reveal-up">Minhas habilidades</h2>
+    <section className="pt-16 lg:pt-24 pb-16">
+      <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto">
+        <div className="max-w-3xl mb-12 text-center mx-auto">
+          <p className="text-xs uppercase tracking-widest text-primary mb-4">
+            Expertise
+          </p>
+          <h2 className="text-2xl lg:text-3xl font-serif text-primary mb-4">
+            Minhas habilidades
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Competências essenciais para transformar estratégias em resultados concretos.
+          </p>
+        </div>
 
-        <p className="mt-3 mb-8 ">
-          Utilizo técnicas de copywriting e marketing digital para criar
-          mensagens que conectam, vendem e posicionam marcas com autenticidade e
-          impacto.
-        </p>
-
-        <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
-          {skillItem.map(({ label, desc }, key) => (
-            <SkillCard key={key} label={label} desc={desc}  />
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+          {skillItem.map(({ label, desc, icon }, key) => (
+            <SkillCard key={key} label={label} desc={desc} icon={icon} />
           ))}
         </div>
       </div>

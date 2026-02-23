@@ -59,7 +59,7 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Mensagem enviada!");
+      setResult("Mensagem enviada com sucesso!");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -68,82 +68,94 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section">
-      <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
-        <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
-          <h2 className="headline-2 lg:max-w-[12ch] ">Entre em contato</h2>
-          <p className="text-zinc-800 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
-            Vamos juntos transformar ideias em histórias que emocionam, informam
-            e vendem!
-          </p>
-          <div className="flex items-center gap-2 mt-auto">
-            {socialLinks.map(({ href, icon }, key) => (
-              <a
-                key={key}
-                href={href}
-                target="_blank"
-                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-violet-400 hover:text-zinc-950 active:bg-zinc-50/80 "
-              >
-                {icon}
-              </a>
-            ))}
+    <section id="contact" className="pt-16 lg:pt-24 pb-16">
+      <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-24 items-start">
+          <div className="mb-12 lg:mb-0">
+            <p className="text-xs uppercase tracking-widest text-primary mb-4">
+              Contato
+            </p>
+            <h2 className="text-2xl lg:text-3xl font-serif text-primary mb-6">
+              Entre em contato
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl">
+              Vamos juntos transformar ideias em histórias que emocionam, informam
+              e vendem!
+            </p>
+            <div className="flex items-center gap-3">
+              {socialLinks.map(({ href, icon, alt }, key) => (
+                <a
+                  key={key}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={alt}
+                  className="w-12 h-12 rounded-full border border-primary/20 grid place-items-center text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+                >
+                  {icon}
+                </a>
+              ))}
+            </div>
           </div>
+
+          <form onSubmit={onSubmit} className="bg-white border border-primary/10 rounded-xl p-6 lg:p-8">
+            <div className="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  Nome
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autoComplete="name"
+                  required
+                  placeholder="Seu nome"
+                  className="w-full px-4 py-3 rounded-lg border border-primary/20 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autoComplete="email"
+                  required
+                  placeholder="seu@email.com"
+                  className="w-full px-4 py-3 rounded-lg border border-primary/20 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
+                />
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                Mensagem
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Olá! Digite sua mensagem..."
+                required
+                rows="5"
+                className="w-full px-4 py-3 rounded-lg border border-primary/20 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition resize-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full h-11 px-8 rounded-md inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 transition font-medium"
+            >
+              Enviar mensagem
+            </button>
+            {result && (
+              <p className="mt-4 text-sm text-center text-muted-foreground">{result}</p>
+            )}
+          </form>
         </div>
-
-        <form onSubmit={onSubmit} className="xl:pl-10 2xl:pl-20">
-          <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
-            <div className="mb-4">
-              <label htmlFor="name" className="label ">
-                Nome
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                autoComplete="name"
-                required
-                placeholder="Digite seu nome"
-                className="text-field"
-              />
-            </div>
-
-            <div className="mb-4">
-              <label htmlFor="email" className="label">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                autoComplete="email"
-                required
-                placeholder="Digite seu email"
-                className="text-field"
-              />
-            </div>
-          </div>
-
-          <div className="mb-4">
-            <label htmlFor="message" className="label ">
-              Mensagem
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Olá! Digite sua mensagem"
-              required
-              className="text-field resize-y min-h-32 max-h-80 "
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="btn btn-primary [&]:max-w-full w-full justify-center "
-          >
-            Enviar
-          </button>
-          <p className="mt-4 text-sm text-zinc-700">{result}</p>
-        </form>
       </div>
     </section>
   );

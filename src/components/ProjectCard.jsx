@@ -6,35 +6,41 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
   return (
     <div
       className={
-        "relative p-4 rounded-2xl bg-violet-400/50 hover:bg-violet-500/50 active:bg-zinc-200/60 ring-1 ring-inset ring-zinc-700 transition-colors " +
+        "relative bg-white border border-primary/10 rounded-xl overflow-hidden hover:border-primary/30 hover:shadow-lg transition-all group " +
         classes
       }
     >
-      <figure className="img-box aspect-square rounded-lg mb-4">
-        <img src={imgSrc} alt={title} loading="lazy" className="img-cover" />
+      <figure className="aspect-square overflow-hidden">
+        <img 
+          src={imgSrc} 
+          alt={title} 
+          loading="lazy" 
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+        />
       </figure>
 
-      <div className="flex items-center justify-between gap-4">
-        <div>
-          <h3 className="title-1 mb-3">{title}</h3>
-
-          <div className="flex flex-warp items-center gap-2">
-            {tags.map((label, key) => (
-              <span key={key} className="h-8 text-sm text-zinc-800 bg-zinc-200 grid items-center px-3 rounded-lg">
-                {label}
-              </span>
-            ))}
-          </div>
+      <div className="p-6">
+        <div className="flex flex-wrap gap-2 mb-4">
+          {tags.map((label, key) => (
+            <span 
+              key={key} 
+              className="text-xs px-3 py-1 bg-primary/5 text-primary rounded-full font-medium">
+              {label}
+            </span>
+          ))}
         </div>
 
-        <div className="w-11 h-11 rounded-lg grid place-items-center bg-violet-400 text-zinc-950 shrink-0">
-          <span className="material-symbols-rounded" aria-hidden="true">
-            arrow_outward
-          </span>
+        <div className="flex items-center justify-between">
+          <h3 className="text-sm font-medium text-foreground">Ver projeto</h3>
+          <div className="w-8 h-8 rounded-full bg-primary/10 grid place-items-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+            <span className="material-symbols-rounded text-[16px]" aria-hidden="true">
+              arrow_outward
+            </span>
+          </div>
         </div>
       </div>
 
-      <a href={projectLink} className="absolute inset-0" target="_blank"></a>
+      <a href={projectLink} className="absolute inset-0" target="_blank" rel="noopener noreferrer"></a>
     </div>
   );
 };
