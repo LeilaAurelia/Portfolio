@@ -1,41 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap");
+
 :root {
   --background: 30 25% 98%;
-  --foreground: 265 25% 28%;
-  --primary: 265 30% 28%;
+  --foreground: 265 25% 18%;
+  --primary: 265 45% 32%;
   --primary-foreground: 30 25% 98%;
   --surface-warm: 35 25% 96%;
-  --muted-foreground: 265 20% 40%;
-  --border: 265 10% 90%;
+  --muted-foreground: 265 20% 45%;
+  --border: 265 10% 88%;
+  --accent: 265 60% 42%;
+  --accent-light: 265 40% 92%;
+  --violet-glow: rgba(124, 58, 237, 0.08);
 }
 
 @import "tailwindcss";
 @tailwind utilities;
 
+/* ─── Base ─────────────────────────────────────── */
+
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
 }
 
-/* Menu btn */
-.menu-btn {
-  @apply w-10 h-10 grid place-items-center
-         bg-violet-100/60 text-violet-400
-         rounded-xl ring-1 ring-violet-300
-         hover:bg-violet-200/70
-         transition-all active:scale-95 cursor-pointer;
+/* ─── Grain Overlay ─────────────────────────────── */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
 }
 
-/* Utilidades */
-
-.material-symbols-rounded {
-  @apply w-[1em] h-[1em] overflow-hidden;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+/* ─── Typography ────────────────────────────────── */
+.font-serif-display {
+  font-family: "DM Serif Display", serif;
 }
 
+.headline-1,
+.headline-2,
+.headline-3,
+.title-1 {
+  @apply max-w-max;
+  font-family: "DM Serif Display", serif;
+  color: hsl(var(--foreground));
+}
+
+.headline-1 {
+  @apply text-5xl leading-tight font-normal lg:text-[58px] lg:leading-[1.1];
+}
+
+.headline-2 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-normal;
+}
+
+.headline-3 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-normal;
+}
+
+.title-1 {
+  @apply text-xl lg:text-2xl lg:leading-tight font-normal;
+}
+
+/* ─── Utilities ──────────────────────────────────── */
 .container {
   @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
 }
@@ -48,114 +85,311 @@ body {
   @apply w-full h-full object-cover;
 }
 
-.section{
-  @apply pt-20 lg:pt-32
+.section {
+  @apply pt-24 lg:pt-36;
 }
 
-.reveal-up{
-  @apply translate-y-20 opacity-0
+/* ─── Reveal Animations ─────────────────────────── */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/*  */
+.reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-/* Exemplo em index.css ou tailwind.config.js safelist */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger delays */
+.delay-100 {
+  transition-delay: 100ms;
+}
+.delay-200 {
+  transition-delay: 200ms;
+}
+.delay-300 {
+  transition-delay: 300ms;
+}
+.delay-400 {
+  transition-delay: 400ms;
+}
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+/* ─── Navbar ─────────────────────────────────────── */
+.nav-link {
+  @apply text-sm font-medium tracking-wide transition-all duration-300 relative;
+  color: hsl(var(--muted-foreground));
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: hsl(var(--accent));
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover {
+  color: hsl(var(--foreground));
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ─── Button ─────────────────────────────────────── */
+.btn {
+  @apply max-w-max h-11 px-6 text-sm
+         flex items-center gap-3
+         font-medium
+         transition-all duration-300;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary {
+  @apply rounded-full
+         bg-[hsl(var(--foreground))] text-[hsl(var(--background))]
+         hover:scale-[1.03] active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply rounded-full border
+         border-[hsl(var(--foreground)/0.2)]
+         hover:border-[hsl(var(--foreground)/0.6)] 
+         hover:bg-[hsl(var(--foreground)/0.04)]
+         active:scale-[0.98];
+}
+
+.btn .material-symbols-rounded {
+  @apply text-[16px];
+}
+
+/* ─── Cards ──────────────────────────────────────── */
+.card-base {
+  background: white;
+  border: 1px solid hsl(var(--border));
+  border-radius: 1.25rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-base:hover {
+  border-color: hsl(var(--accent) / 0.3);
+  box-shadow:
+    0 20px 60px -15px hsl(var(--accent) / 0.12),
+    0 4px 20px -5px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* ─── Form Fields ────────────────────────────────── */
+.label {
+  @apply block text-[hsl(var(--foreground))] text-sm font-normal mb-2;
+  letter-spacing: 0.01em;
+}
+
+.text-field {
+  @apply block outline-none w-full px-4 py-3 text-sm rounded-xl 
+         bg-[hsl(var(--accent-light))] 
+         border border-transparent
+         transition-all duration-300;
+}
+
+.text-field:hover {
+  border-color: hsl(var(--accent) / 0.3);
+}
+
+.text-field:focus {
+  border-color: hsl(var(--accent));
+  background: white;
+  box-shadow: 0 0 0 4px hsl(var(--accent) / 0.08);
+}
+
+.text-field::placeholder {
+  color: hsl(var(--muted-foreground) / 0.7);
+}
+
+/* ─── Slide Track ────────────────────────────────── */
 .slide-track {
   will-change: transform;
 }
 
-
-/* Typography */
-.headline-1,
-.headline-2,
-.headline-3,
-.title-1
-{
-  @apply max-w-max;
-  background: linear-gradient(135deg, hsl(var(--primary)), hsl(265 25% 35%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* ─── Menu btn ───────────────────────────────────── */
+.menu-btn {
+  @apply w-10 h-10 grid place-items-center
+         rounded-xl 
+         transition-all active:scale-95;
+  border: 1px solid hsl(var(--border));
+  background: white;
 }
 
-
-.headline-1{
-  @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.29]
+/* ─── Material icons ────────────────────────────── */
+.material-symbols-rounded {
+  @apply w-[1em] h-[1em] overflow-hidden;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
-
-.headline-2{
-  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
+/* ─── Header / Scrolled pill ────────────────────── */
+.header-scrolled {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  box-shadow:
+    0 1px 0 0 hsl(var(--border) / 0.6),
+    0 8px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
-.headline-3{
-    @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
+/* ─── Hero gradient orb ─────────────────────────── */
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: orb-float 8s ease-in-out infinite alternate;
 }
 
-.title-1 {
-  @apply  text-xl lg:text-2xl lg:leading-tight font-semibold
+@keyframes orb-float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(30px, -30px) scale(1.08);
+  }
 }
 
-
-/* Navbar */
-
-.navbar {
-  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-violet-400/80 rounded-2xl ring-inset ring-1 ring-zinc-300 scale-90 isolate blur-sm opacity-0 invisible transition-all
-         md:static md:flex md:items-center md:opacity-100 md:visible md:blur-none md:scale-100 md:translate-x-0 md:min-w-fit
-          md:justify-center md:text-center;
+/* ─── Marquee pause on hover ────────────────────── */
+.slide-track-wrap:hover .slide-track {
+  animation-play-state: paused;
 }
 
-.navbar.active {
-  @apply opacity-100 scale-100 blur-none visible;
+/* ─── Horizontal line separator ────────────────── */
+.section-label {
+  @apply text-[10px] uppercase tracking-[0.2em] font-medium;
+  color: hsl(var(--accent));
 }
 
-.nav-link {
-  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-950 hover:text-zinc-200 transition-colors whitespace-nowrap;
+/* ─── Skill icon box ─────────────────────────────── */
+.skill-icon-box {
+  @apply w-12 h-12 rounded-xl grid place-items-center transition-all duration-500;
+  background: hsl(var(--accent-light));
+  color: hsl(var(--accent));
 }
 
-.nav-link.active {
-  @apply text-zinc-900 duration-500;
+.card-base:hover .skill-icon-box {
+  background: hsl(var(--accent));
+  color: white;
+  transform: scale(1.1) rotate(3deg);
 }
 
-.navbar .active-box {
-  @apply absolute bg-gray-200 rounded -z-10 transition-[top,left] duration-500;
+/* ─── Progress bar ───────────────────────────────── */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: hsl(var(--accent));
+  z-index: 99997;
+  transform-origin: left;
+  transition: transform 0.1s linear;
 }
 
-/* Button */
-.btn {
-  @apply max-w-max h-11 px-6 text-base 
-         flex items-center gap-3 
-         rounded-2xl font-semibold 
-         ring-1 ring-zinc-50/5 ring-inset 
-         transition-all;
+/* ─── Contact input focus ────────────────────────── */
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
 }
 
-.btn-secondary {
-  @apply bg-violet-400 text-zinc-900 hover:bg-gray-200/80;
+/* ─── Floating label animation ─────────────────── */
+.form-group {
+  position: relative;
 }
 
-.btn .material-symbols-rounded {
-  @apply text-[18px] cursor-pointer
+/* ─── Image hover zoom ───────────────────────────── */
+.project-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.btn:has( .material-symbols-rounded){
-@apply pr-3 
+.card-base:hover .project-img {
+  transform: scale(1.06);
 }
 
-.btn-primary{
-@apply h-11 bg-violet-400 text-zinc-950 hover:bg-zinc-300 active:bg-zinc-200
+/* ─── Tag pill ───────────────────────────────────── */
+.tag-pill {
+  @apply text-[11px] px-3 py-1 rounded-full font-medium;
+  background: hsl(var(--accent-light));
+  color: hsl(var(--accent));
+  letter-spacing: 0.02em;
 }
 
-
-/* Texto */
-
-.label{
-  @apply block text-zinc-900 text-sm font-normal mb-2
+/* ─── Counter ────────────────────────────────────── */
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.text-field{
-  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-300 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-violet-400 focus:ring-2
+.stat-number {
+  animation: count-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.text-field::placeholder{
-  @apply text-zinc-600
+/* ─── Footer ─────────────────────────────────────── */
+footer {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
 }
+
+/* ─── Responsive ─────────────────────────────────── */

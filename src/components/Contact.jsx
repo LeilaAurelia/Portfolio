@@ -1,160 +1,271 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const socialLinks = [
   {
     href: "https://www.linkedin.com/in/leila-f-270a4813a/",
+    label: "LinkedIn",
     icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M5.75 3C4.24011 3 3 4.24011 3 5.75V18.25C3 19.7599 4.24011 21 5.75 21H18.25C19.7599 21 21 19.7599 21 18.25V5.75C21 4.24011 19.7599 3 18.25 3H5.75ZM5.75 4.5H18.25C18.9491 4.5 19.5 5.05089 19.5 5.75V18.25C19.5 18.9491 18.9491 19.5 18.25 19.5H5.75C5.05089 19.5 4.5 18.9491 4.5 18.25V5.75C4.5 5.05089 5.05089 4.5 5.75 4.5ZM7.75 6.5C7.41848 6.5 7.10054 6.6317 6.86612 6.86612C6.6317 7.10054 6.5 7.41848 6.5 7.75C6.5 8.08152 6.6317 8.39946 6.86612 8.63388C7.10054 8.8683 7.41848 9 7.75 9C8.08152 9 8.39946 8.8683 8.63388 8.63388C8.8683 8.39946 9 8.08152 9 7.75C9 7.41848 8.8683 7.10054 8.63388 6.86612C8.39946 6.6317 8.08152 6.5 7.75 6.5ZM7 10C6.7235 10 6.5 10.2235 6.5 10.5V17C6.5 17.2765 6.7235 17.5 7 17.5H8.5C8.7765 17.5 9 17.2765 9 17V10.5C9 10.2235 8.7765 10 8.5 10H7ZM10.5 10C10.2235 10 10 10.2235 10 10.5V17C10 17.2765 10.2235 17.5 10.5 17.5H12C12.2765 17.5 12.5 17.2765 12.5 17V13.25C12.5 12.5605 13.0605 12 13.75 12C14.4395 12 15 12.5605 15 13.25V17C15 17.2765 15.2235 17.5 15.5 17.5H17C17.2765 17.5 17.5 17.2765 17.5 17V13C17.5 11.3455 16.1545 10 14.5 10C13.731 10 13.0315 10.293 12.5 10.7705V10.5C12.5 10.2235 12.2765 10 12 10H10.5Z"
-          fill="currentColor"
-        />
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M5.75 3C4.24 3 3 4.24 3 5.75V18.25C3 19.76 4.24 21 5.75 21H18.25C19.76 21 21 19.76 21 18.25V5.75C21 4.24 19.76 3 18.25 3H5.75ZM7.75 6.5C8.44 6.5 9 7.06 9 7.75C9 8.44 8.44 9 7.75 9C7.06 9 6.5 8.44 6.5 7.75C6.5 7.06 7.06 6.5 7.75 6.5ZM7 10H8.5V17.5H7V10ZM10.5 10H12V10.77C12.5 10.29 13.2 10 14 10C15.65 10 17 11.35 17 13V17.5H15.5V13.25C15.5 12.56 14.94 12 14.25 12C13.56 12 13 12.56 13 13.25V17.5H11.5V10.5C11.5 10.22 11.28 10 11 10H10.5V10Z" />
       </svg>
     ),
-    alt: "LinkedIn",
   },
-
   {
     href: "https://www.instagram.com/_leilafalcao/",
+    label: "Instagram",
     icon: (
-      <svg
-        width="25"
-        height="24"
-        viewBox="0 0 25 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8.75 2.5C5.58319 2.5 3 5.08319 3 8.25V15.75C3 18.9164 5.5831 21.5 8.75 21.5H16.25C19.4165 21.5 22 18.9165 22 15.75V8.25C22 5.0831 19.4164 2.5 16.25 2.5H8.75ZM8.75 4H16.25C18.6056 4 20.5 5.8939 20.5 8.25V15.75C20.5 18.1055 18.6055 20 16.25 20H8.75C6.3939 20 4.5 18.1056 4.5 15.75V8.25C4.5 5.89381 6.39381 4 8.75 4ZM17.5 6C16.9475 6 16.5 6.4475 16.5 7C16.5 7.5525 16.9475 8 17.5 8C18.0525 8 18.5 7.5525 18.5 7C18.5 6.4475 18.0525 6 17.5 6ZM12.5 7C9.74759 7 7.5 9.24759 7.5 12C7.5 14.7524 9.74759 17 12.5 17C15.2524 17 17.5 14.7524 17.5 12C17.5 9.24759 15.2524 7 12.5 7ZM12.5 8.5C14.4416 8.5 16 10.0584 16 12C16 13.9416 14.4416 15.5 12.5 15.5C10.5584 15.5 9 13.9416 9 12C9 10.0584 10.5584 8.5 12.5 8.5Z"
-          fill="currentColor"
-        />
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8.75 2.5C5.58 2.5 3 5.08 3 8.25V15.75C3 18.92 5.58 21.5 8.75 21.5H16.25C19.42 21.5 22 18.92 22 15.75V8.25C22 5.08 19.42 2.5 16.25 2.5H8.75ZM17.5 6C18.05 6 18.5 6.45 18.5 7C18.5 7.55 18.05 8 17.5 8C16.95 8 16.5 7.55 16.5 7C16.5 6.45 16.95 6 17.5 6ZM12.5 7C15.26 7 17.5 9.25 17.5 12C17.5 14.75 15.26 17 12.5 17C9.75 17 7.5 14.75 7.5 12C7.5 9.25 9.75 7 12.5 7ZM12.5 8.5C10.56 8.5 9 10.06 9 12C9 13.94 10.56 15.5 12.5 15.5C14.44 15.5 16 13.94 16 12C16 10.06 14.44 8.5 12.5 8.5Z" />
       </svg>
     ),
-    alt: "Instagram",
   },
 ];
 
 const Contact = () => {
   const [result, setResult] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Enviando...");
+    setLoading(true);
+    setResult("");
     const formData = new FormData(event.target);
-
     formData.append("access_key", "9ec6fedb-df29-4820-87fa-d222d2d45962");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await response.json();
 
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Mensagem enviada com sucesso!");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+      if (data.success) {
+        setResult("success");
+        event.target.reset();
+      } else {
+        setResult("error");
+      }
+    } catch {
+      setResult("error");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <section id="contact" className="pt-16 lg:pt-24 pb-16">
+    <section id="contact" className="pt-24 lg:pt-36 pb-24">
       <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-16 xl:gap-24 items-start">
-          <div className="mb-12 lg:mb-0">
-            <p className="text-xs uppercase tracking-widest text-primary mb-4">
-              Contato
-            </p>
-            <h2 className="text-2xl lg:text-3xl font-serif text-primary mb-6">
-              Entre em contato
+        {/* Section header */}
+        <div className="reveal-up flex items-center gap-3 mb-16">
+          <span className="w-8 h-px bg-[hsl(var(--accent))]" />
+          <p className="section-label">Contato</p>
+          <span className="flex-1 h-px bg-[hsl(var(--border))]" />
+        </div>
+
+        <div className="lg:grid lg:grid-cols-[1fr_480px] lg:gap-20 xl:gap-28 items-start">
+          {/* LEFT */}
+          <div className="mb-12 lg:mb-0 reveal-left">
+            <h2 className="font-serif-display text-[clamp(2rem,5vw,3.5rem)] leading-tight text-[hsl(var(--foreground))] mb-6">
+              Vamos criar algo
+              <br />
+              <span style={{ color: "hsl(var(--accent))" }}>
+                incrível juntos?
+              </span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl">
-              Vamos juntos transformar ideias em histórias que emocionam, informam
-              e vendem!
+            <p className="text-[hsl(var(--muted-foreground))] text-[15px] leading-relaxed mb-10 max-w-md">
+              Transformo ideias em histórias que emocionam, informam e vendem.
+              Entre em contato e vamos conversar sobre o seu projeto.
             </p>
-            <div className="flex items-center gap-3">
-              {socialLinks.map(({ href, icon, alt }, key) => (
+
+            {/* Social */}
+            <div className="flex items-center gap-3 mb-10">
+              {socialLinks.map(({ href, icon, label }) => (
                 <a
-                  key={key}
+                  key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={alt}
-                  className="w-12 h-12 rounded-full border border-primary/20 grid place-items-center text-primary hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all"
+                  aria-label={label}
+                  className="group flex items-center gap-2.5 h-11 pl-4 pr-5 rounded-full
+                    border border-[hsl(var(--border))]
+                    text-[hsl(var(--muted-foreground))]
+                    hover:border-[hsl(var(--accent)/0.4)]
+                    hover:text-[hsl(var(--accent))]
+                    hover:bg-[hsl(var(--accent-light))]
+                    transition-all duration-300"
                 >
                   {icon}
+                  <span className="text-sm font-medium">{label}</span>
                 </a>
               ))}
             </div>
+
+            {/* Info card */}
+            <div
+              className="rounded-2xl p-6"
+              style={{
+                background: "hsl(var(--accent-light))",
+                border: "1px solid hsl(var(--accent) / 0.15)",
+              }}
+            >
+              <div className="flex items-start gap-4">
+                <div
+                  className="w-10 h-10 rounded-xl grid place-items-center shrink-0"
+                  style={{ background: "hsl(var(--accent))", color: "white" }}
+                >
+                  <span className="material-symbols-rounded text-[18px]">
+                    schedule
+                  </span>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-[hsl(var(--foreground))] mb-1">
+                    Resposta em até 24h
+                  </p>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">
+                    Segunda a sexta, 9h às 18h (Horário de Brasília)
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <form onSubmit={onSubmit} className="bg-white border border-primary/10 rounded-xl p-6 lg:p-8">
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                  Nome
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  autoComplete="name"
-                  required
-                  placeholder="Seu nome"
-                  className="w-full px-4 py-3 rounded-lg border border-primary/20 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  autoComplete="email"
-                  required
-                  placeholder="seu@email.com"
-                  className="w-full px-4 py-3 rounded-lg border border-primary/20 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition"
-                />
-              </div>
-            </div>
-
-            <div className="mb-6">
-              <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                Mensagem
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Olá! Digite sua mensagem..."
-                required
-                rows="5"
-                className="w-full px-4 py-3 rounded-lg border border-primary/20 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 transition resize-none"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full h-11 px-8 rounded-md inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 transition font-medium"
+          {/* FORM */}
+          <div className="reveal-right">
+            <form
+              onSubmit={onSubmit}
+              className="card-base rounded-2xl p-7 lg:p-8"
             >
-              Enviar mensagem
-            </button>
-            {result && (
-              <p className="mt-4 text-sm text-center text-muted-foreground">{result}</p>
-            )}
-          </form>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-xs font-medium text-[hsl(var(--foreground))] mb-2 uppercase tracking-wide"
+                  >
+                    Nome
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    autoComplete="name"
+                    required
+                    placeholder="Seu nome"
+                    className="text-field"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-xs font-medium text-[hsl(var(--foreground))] mb-2 uppercase tracking-wide"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autoComplete="email"
+                    required
+                    placeholder="seu@email.com"
+                    className="text-field"
+                  />
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <label
+                  htmlFor="message"
+                  className="block text-xs font-medium text-[hsl(var(--foreground))] mb-2 uppercase tracking-wide"
+                >
+                  Mensagem
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Olá! Conte-me sobre seu projeto..."
+                  required
+                  rows="5"
+                  className="text-field resize-none"
+                />
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full h-12 rounded-xl inline-flex items-center justify-center gap-2
+                  bg-[hsl(var(--foreground))] text-[hsl(var(--background))]
+                  text-sm font-medium
+                  hover:opacity-80 active:scale-[0.99]
+                  transition-all duration-300
+                  disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {loading ? (
+                  <>
+                    <svg
+                      className="animate-spin w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      />
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.37 0 0 5.37 0 12h4z"
+                      />
+                    </svg>
+                    Enviando...
+                  </>
+                ) : (
+                  <>
+                    Enviar mensagem
+                    <span className="material-symbols-rounded text-[16px]">
+                      send
+                    </span>
+                  </>
+                )}
+              </button>
+
+              {result === "success" && (
+                <div
+                  className="mt-4 flex items-center gap-2 rounded-xl px-4 py-3"
+                  style={{
+                    background: "hsl(142 70% 45% / 0.1)",
+                    border: "1px solid hsl(142 70% 45% / 0.2)",
+                  }}
+                >
+                  <span className="material-symbols-rounded text-green-600 text-[16px]">
+                    check_circle
+                  </span>
+                  <p className="text-sm text-green-700 font-medium">
+                    Mensagem enviada com sucesso!
+                  </p>
+                </div>
+              )}
+              {result === "error" && (
+                <div
+                  className="mt-4 flex items-center gap-2 rounded-xl px-4 py-3"
+                  style={{
+                    background: "hsl(0 70% 45% / 0.1)",
+                    border: "1px solid hsl(0 70% 45% / 0.2)",
+                  }}
+                >
+                  <span className="material-symbols-rounded text-red-600 text-[16px]">
+                    error
+                  </span>
+                  <p className="text-sm text-red-700 font-medium">
+                    Erro ao enviar. Tente novamente.
+                  </p>
+                </div>
+              )}
+            </form>
+          </div>
         </div>
       </div>
     </section>

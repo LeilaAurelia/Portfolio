@@ -25,89 +25,90 @@ const CopyModal = ({ isOpen, onClose, copyData }) => {
     }
   }, [isOpen]);
 
-  // Garante que o scroll do mouse não "escape" para a página
   const handleWheelOnOverlay = (e) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop += e.deltaY;
-    }
+    if (scrollRef.current) scrollRef.current.scrollTop += e.deltaY;
   };
 
   if (!isOpen || !copyData) return null;
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4
-        bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-[200] flex items-center justify-center p-4"
+      style={{ background: "rgba(0,0,0,0.6)", backdropFilter: "blur(12px)" }}
       onClick={onClose}
-      onWheel={handleWheelOnOverlay} // ← redireciona scroll do overlay
+      onWheel={handleWheelOnOverlay}
     >
       <div
-        className="relative w-full max-w-4xl bg-white rounded-2xl shadow-2xl
-          flex flex-col"
-        style={{ height: "90vh" }}
+        className="relative w-full max-w-3xl bg-white rounded-3xl shadow-2xl flex flex-col"
+        style={{
+          height: "88vh",
+          animation: "scaleIn 0.3s cubic-bezier(0.16,1,0.3,1)",
+        }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* ── Header ── */}
-        <div
-          className="shrink-0 bg-white border-b border-primary/10
-          px-6 py-4 flex items-center justify-between rounded-t-2xl"
-        >
+        <style>{`
+          @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95) translateY(16px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+          }
+        `}</style>
+
+        {/* Header */}
+        <div className="shrink-0 px-7 py-5 flex items-start justify-between border-b border-[hsl(var(--border))]">
           <div>
-            <h3 className="text-xl font-serif text-primary">
+            <h3 className="font-serif-display text-xl text-[hsl(var(--foreground))] mb-1">
               {copyData.title}
             </h3>
-            <p className="text-sm text-muted-foreground mt-1">
-              {copyData.category}
-            </p>
+            <span className="tag-pill">{copyData.category}</span>
           </div>
           <button
             onClick={onClose}
-            className="w-10 h-10 rounded-full border-2 border-primary/20
-              hover:bg-primary hover:text-primary-foreground hover:border-primary
-              transition-all flex items-center justify-center text-primary"
-            aria-label="Fechar modal"
+            className="ml-4 shrink-0 w-9 h-9 rounded-full border border-[hsl(var(--border))]
+              grid place-items-center text-[hsl(var(--muted-foreground))]
+              hover:bg-[hsl(var(--foreground))] hover:text-white hover:border-transparent
+              transition-all duration-300"
+            aria-label="Fechar"
           >
-            <span className="material-symbols-rounded">close</span>
+            <span className="material-symbols-rounded text-[16px]">close</span>
           </button>
         </div>
 
-        {/* ── Conteúdo com scroll ── */}
+        {/* Content */}
         <div
           ref={scrollRef}
-          className="flex-1 overflow-y-auto overflow-x-hidden px-6 py-6"
-          // Impede que o evento de scroll saia daqui para o overlay
+          className="flex-1 overflow-y-auto px-7 py-6"
           onWheel={(e) => e.stopPropagation()}
         >
-          <div className="prose prose-sm max-w-none">
+          <div className="space-y-8">
             {copyData.content.map((section, index) => (
-              <div key={index} className="mb-8">
+              <div key={index}>
                 {section.subtitle && (
-                  <h4 className="text-lg font-semibold text-primary mb-3">
+                  <h4 className="font-serif-display text-lg text-[hsl(var(--foreground))] mb-3">
                     {section.subtitle}
                   </h4>
                 )}
                 {section.subject && (
-                  <p className="text-sm font-medium text-foreground mb-2">
-                    <strong>Assunto:</strong> {section.subject}
+                  <p className="text-sm font-medium text-[hsl(var(--foreground))] mb-2">
+                    <span className="text-[hsl(var(--muted-foreground))]">
+                      Assunto:{" "}
+                    </span>
+                    {section.subject}
                   </p>
                 )}
-                <div className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                <p className="text-[hsl(var(--muted-foreground))] text-sm leading-relaxed whitespace-pre-line">
                   {section.text}
-                </div>
+                </p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* ── Footer ── */}
-        <div
-          className="shrink-0 bg-white border-t border-primary/10
-          px-6 py-4 rounded-b-2xl"
-        >
+        {/* Footer */}
+        <div className="shrink-0 px-7 py-5 border-t border-[hsl(var(--border))]">
           <button
             onClick={onClose}
-            className="w-full h-11 px-8 rounded-md bg-primary text-primary-foreground
-              hover:bg-primary/90 transition font-medium"
+            className="w-full h-11 rounded-xl bg-[hsl(var(--foreground))] text-[hsl(var(--background))]
+              text-sm font-medium hover:opacity-80 transition-all duration-300"
           >
             Fechar
           </button>

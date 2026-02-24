@@ -1,40 +1,53 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const Navbar = ({ navOpen }) => {
+const Navbar = ({ navOpen, mobile = false, onClose }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
   const navItems = [
-    { label: "Início", to: "/", hash: "#home", key: "inicio" },
-    { label: "Sobre mim", to: "/", hash: "#about", key: "sobre" },
-    { label: "Projetos", to: "/", hash: "#work", key: "projetos" },
-    { label: "Feedbacks", to: "/", hash: "#reviews", key: "feedbacks" },
+    { label: "Início", to: "/", hash: "home", key: "inicio" },
+    { label: "Sobre mim", to: "/", hash: "about", key: "sobre" },
+    { label: "Projetos", to: "/", hash: "work", key: "projetos" },
+    { label: "Feedbacks", to: "/", hash: "reviews", key: "feedbacks" },
   ];
 
-  const handleClick = (to, hash, event) => {
-    event.preventDefault();
-
-    if (location.pathname === "/" && to === "/") {
-      const id = hash.replace("#", "");
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-      window.history.replaceState(null, "", to + hash);
+  const scrollToId = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
     } else {
-      navigate(to + hash);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
+  const handleClick = (to, hash, event) => {
+    event.preventDefault();
+    if (onClose) onClose();
+
+    if (location.pathname === to) {
+      // Já na página certa — só rola
+      scrollToId(hash);
+    } else {
+      // Navega para a rota e armazena o destino no sessionStorage
+      // O componente de destino lê e rola após montar
+      sessionStorage.setItem("scrollTo", hash);
+      navigate(to);
+    }
+  };
+
+  const linkClass = mobile
+    ? "px-4 py-3 rounded-xl text-sm font-medium text-[hsl(var(--foreground))] hover:bg-[hsl(var(--accent-light))] hover:text-[hsl(var(--accent))] transition-all duration-200 block"
+    : "nav-link";
+
   return (
-    <nav className={`flex gap-10 ${navOpen ? "block" : ""}`}>
+    <nav className={mobile ? "flex flex-col gap-1" : "flex items-center gap-8"}>
       {navItems.map(({ label, to, hash, key }) => (
         <a
           key={key}
-          href={to + hash}
+          href={`${to}#${hash}`}
           onClick={(e) => handleClick(to, hash, e)}
-          className="text-sm font-medium text-foreground/70 hover:text-primary hover:scale-110 transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+          className={linkClass}
         >
           {label}
         </a>

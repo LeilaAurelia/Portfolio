@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "./ProjectCard";
-import { copysData } from "../data/copysData";
-import CopyModal from "./CopyModal";
+import Footer from "./Footer";
 
 const projetos = [
   {
@@ -143,154 +142,68 @@ const projetos = [
   },
 ];
 
-/**
- * CopyCard — estrutura 100% idêntica ao ProjectCard.
- * A <figure> usa a imagem enviada (copy-placeholder.jpg)
- * como thumbnail, igual a qualquer card de projeto.
- */
-const CopyCard = ({ copy, onClick }) => (
-  <div
-    onClick={onClick}
-    className="relative bg-white border border-primary/10 rounded-xl overflow-hidden
-      hover:border-primary/30 hover:shadow-lg transition-all group cursor-pointer"
-  >
-    {/* ── Mesma <figure> do ProjectCard, com a imagem JPG ── */}
-    <figure className="aspect-square overflow-hidden">
-      <img
-        src="/assets/picture/Wavy_Bus-15_Single-06.jpg"
-        alt="Copy de texto"
-        loading="lazy"
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-    </figure>
-
-    {/* ── Rodapé idêntico ao ProjectCard ── */}
-    <div className="p-6">
-      {/* Badge de categoria */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        <span className="text-xs px-3 py-1 bg-primary/5 text-primary rounded-full font-medium">
-          {copy.category}
-        </span>
-        {copy.tags?.map((tag, i) => (
-          <span
-            key={i}
-            className="text-xs px-3 py-1 bg-primary/5 text-primary rounded-full font-medium"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-
-      {/* Título + botão */}
-      <div className="flex items-center justify-between">
-        <h3 className="text-sm font-medium text-foreground line-clamp-1">
-          {copy.title}
-        </h3>
-        <div
-          className="w-8 h-8 rounded-full bg-primary/10 grid place-items-center
-            text-primary group-hover:bg-primary group-hover:text-primary-foreground
-            transition-colors shrink-0 ml-2"
-        >
-          <span
-            className="material-symbols-rounded text-[16px]"
-            aria-hidden="true"
-          >
-            open_in_new
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
 const TodosProjetos = () => {
-  const [selectedCopy, setSelectedCopy] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = (copy) => {
-    setSelectedCopy(copy);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setTimeout(() => setSelectedCopy(null), 300);
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      {/* ══ Seção: Todos os Projetos + Copys num grid contínuo ══ */}
-      <section className="w-full min-h-screen pt-20 lg:pt-32 pb-8">
-        <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16">
+      <section className="w-full min-h-screen pt-24 lg:pt-32 pb-16">
+        <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto">
           {/* Botão voltar */}
-          <div className="mb-6 sm:mb-8">
+          <div className="mb-10">
             <Link
-              to="/#work"
-              className="inline-flex items-center gap-1.5 text-sm font-medium
-                text-primary border border-primary/25 rounded-full px-4 py-1.5
-                hover:bg-primary hover:text-white hover:border-primary
+              to="/"
+              onClick={() => window.scrollTo({ top: 0 })}
+              className="inline-flex items-center gap-2 h-9 px-4 rounded-full text-sm font-medium
+                border border-[hsl(var(--border))]
+                text-[hsl(var(--muted-foreground))]
+                hover:text-[hsl(var(--accent))] hover:border-[hsl(var(--accent)/0.4)]
+                hover:bg-[hsl(var(--accent-light))]
                 transition-all duration-200"
             >
-              <span className="material-symbols-rounded text-[16px]">
+              <span className="material-symbols-rounded text-[15px]">
                 arrow_back
               </span>
-              Voltar para projetos
+              Voltar para o início
             </Link>
           </div>
 
-          {/* Título */}
-          <h2 className="headline-2 text-2xl sm:text-3xl lg:text-4xl mb-3 sm:mb-4">
-            Todos os Projetos
-          </h2>
+          {/* Header */}
+          <div className="flex items-center gap-3 mb-12">
+            <span className="w-8 h-px bg-[hsl(var(--accent))]" />
+            <p className="section-label">Portfólio completo</p>
+            <span className="flex-1 h-px bg-[hsl(var(--border))]" />
+          </div>
 
-          {/* Descrição */}
-          <p className="mb-8 sm:mb-12 text-sm sm:text-base text-stone-700 leading-relaxed">
-            Projetos que atuei como social media, copywriter, analista de
-            marketing, inbound e endomarketing, gestão de contas, SEO content e
-            outros.
-          </p>
+          <div className="max-w-2xl mb-12">
+            <h1 className="font-serif-display text-[clamp(2rem,5vw,3.5rem)] leading-tight text-[hsl(var(--foreground))] mb-4">
+              Todos os Projetos
+            </h1>
+            <p className="text-[hsl(var(--muted-foreground))] text-[15px] leading-relaxed">
+              Projetos que atuei como social media, copywriter, analista de
+              marketing, inbound e endomarketing, gestão de contas, SEO content
+              e outros.
+            </p>
+          </div>
 
-          {/* ── Grid único e contínuo: projetos + copys na sequência ── */}
-          <div
-            className="grid gap-4 sm:gap-5
-              grid-cols-1
-              sm:grid-cols-2
-              md:grid-cols-3
-              xl:grid-cols-4"
-          >
-            {/* Cards de projetos com imagem */}
+          {/* Grid somente com projetos com imagem */}
+          <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
             {projetos.map(({ imgSrc, title, tags, projectLink }, key) => (
               <ProjectCard
-                key={`proj-${key}`}
+                key={key}
                 imgSrc={imgSrc}
                 title={title}
                 tags={tags}
                 projectLink={projectLink}
               />
             ))}
-
-            {/* Cards de copys — continuam direto após o último projeto */}
-            {copysData.map((copy) => (
-              <CopyCard
-                key={`copy-${copy.id}`}
-                copy={copy}
-                onClick={() => openModal(copy)}
-              />
-            ))}
           </div>
         </div>
       </section>
 
-      {/* Modal */}
-      <CopyModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        copyData={selectedCopy}
-      />
+      <Footer />
     </>
   );
 };
