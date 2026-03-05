@@ -135,7 +135,7 @@ const Work = () => {
           <div className="lg:flex lg:items-end lg:justify-between mb-12">
             <div className="reveal-left max-w-lg mb-8 lg:mb-0">
               <h2 className="font-serif-display text-[clamp(1.9rem,4vw,3rem)] leading-tight text-[hsl(var(--foreground))] mb-4">
-                Meus projetos
+                Minhas Copys
               </h2>
               <p className="text-[hsl(var(--muted-foreground))] text-[15px] leading-relaxed">
                 Projetos que transformaram ideias em resultados concretos,
@@ -199,15 +199,6 @@ const Work = () => {
             </div>
 
             {/* Header */}
-            <div className="reveal-left max-w-lg mb-12">
-              <h2 className="font-serif-display text-[clamp(1.9rem,4vw,3rem)] leading-tight text-[hsl(var(--foreground))] mb-4">
-                Minhas copys
-              </h2>
-              <p className="text-[hsl(var(--muted-foreground))] text-[15px] leading-relaxed">
-                Copys, roteiros e textos estratégicos desenvolvidos para
-                diferentes marcas e segmentos.
-              </p>
-            </div>
 
             {/* Grid de cards de texto */}
             <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -243,7 +234,7 @@ const Work = () => {
                       hover:border-[hsl(var(--foreground)/0.5)] hover:bg-[hsl(var(--foreground)/0.04)]
                       active:scale-[0.98] transition-all duration-300"
                   >
-                    Ver mais {copysData.length - INITIAL_VISIBLE} autorias
+                    Ver mais
                     <span className="material-symbols-rounded text-[16px]">
                       expand_more
                     </span>

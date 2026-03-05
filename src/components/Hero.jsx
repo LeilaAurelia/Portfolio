@@ -179,13 +179,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll hint */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-        <div
-          className="w-px bg-[hsl(var(--foreground))]"
-          style={{ height: "48px", animation: "pulse 2s ease-in-out infinite" }}
-        />
-      </div>
+    
     </section>
   );
 };
