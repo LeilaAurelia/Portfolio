@@ -88,7 +88,7 @@ const Hero = () => {
 
             <div className="reveal-up delay-300 flex flex-wrap gap-4">
               <a
-                href="/assets/curriculo/Curriculo_Leila.pdf"
+                href="/assets/curriculo/Curriculo_Leila_Falcão.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 h-12 px-7 rounded-full 
