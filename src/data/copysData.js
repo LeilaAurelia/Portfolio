@@ -116,10 +116,6 @@ export const copysData = [
     tags: ["Todos os ninchos"],
     content: [
       {
-        subtitle: "Apresentação",
-        text: "Copys utilizadas em endomarketing ao longo de minha carreira, abrangendo diversos setores, como saúde, médicos, clínicas, pets, agências de marketing, agronegócios, advogados, educação, biotecnologia, tecnologia e outros. Lembrando que isto é apenas uma amostra da minha capacidade!\n\n—---------------------------------------------------------------------------------------------",
-      },
-      {
         subtitle: "EMPRESA AGRO",
         text: "Vocês estão acompanhando as palestras da semana, certo?\nQuem participou sabe que os dias 2 e 3 foram cheios de dicas e novidades de como manter o local de trabalho mais seguro.\n\nAgora nossa unidade de Nova Itaberaba, além de uma produção sustentável e de qualidade, também estará mais preparada com segurança.\n\n—---------------------------------------------------------------------------------------------",
       },
@@ -335,325 +331,29 @@ export const copysData = [
     category: "Blog Post",
     tags: ["Todos os ninchos"],
     content: [
-      // ─────────────────────────────────────────────
-      // ARTIGO 1: Educação Infantil
-      // ─────────────────────────────────────────────
       {
-        subject: "Artigo 1: Educação Infantil",
-        text: "5 Estratégias Criativas para Estimular o Aprendizado na Educação Infantil",
-        style: { fontWeight: "bold", textAlign: "justify" },
+        subtitle: "Artigo 1: Educação Infantil",
+        text: "5 Estratégias Criativas para Estimular o Aprendizado na Educação Infantil\n\nA fase inicial da educação das crianças é crucial para o desenvolvimento de suas habilidades cognitivas, emocionais e sociais. Como pais e educadores, temos a responsabilidade de criar um ambiente estimulante que promova a criatividade e a imaginação dos pequenos.\n\nNeste guia, vamos explorar cinco estratégias criativas que podem ser facilmente implementadas em casa e na escola, para enriquecer o aprendizado na educação infantil.\n\nPromova um ambiente estimulante:\n\n1. Em casa e na escola, é importante criar um ambiente rico em estímulos que desperte a curiosidade e a imaginação das crianças. Brinquedos educativos, livros coloridos, música alegre e materiais artísticos podem transformar o espaço em um ambiente propício para a exploração e a descoberta.\n\nInvista no contato com a arte:\n\n2. Expor as crianças a diferentes formas de arte, como música, pintura, escultura e teatro, é uma maneira poderosa de estimular sua criatividade. Faça passeios a museus, galerias de arte e apresentações culturais, e incorpore atividades artísticas no dia a dia, como desenhar, pintar e fazer colagens. Essas experiências enriquecedoras ajudam as crianças a expressar suas emoções e ideias de forma criativa.\n\nCuidado com o excesso de regras:\n\n3. É importante permitir que as crianças experimentem e explorem livremente, sem o peso das regras e restrições. Deixe que elas se sujem, brinquem livremente e expressem suas opiniões sem medo de julgamento. Um ambiente acolhedor e seguro é essencial para que as crianças se sintam à vontade para explorar e criar livremente.\n\nConverse e pergunte:\n\n4. Estimule a imaginação das crianças por meio de conversas e perguntas que as desafiem a pensar de forma criativa. Faça perguntas abertas que incentivem a reflexão e o debate, como \"O que você acha que aconteceria se...?\" ou \"Como você faria isso de uma maneira diferente?\". Ouça atentamente suas respostas e incentive-as a expressar suas ideias e opiniões.\n\nFuja da rotina:\n\n5. Introduza variações na rotina diária das crianças para estimular sua curiosidade e imaginação. Planeje atividades diferentes, visite lugares novos, experimente novos alimentos e incentive as crianças a explorar o mundo ao seu redor. Essas experiências diversificadas ajudam a ampliar os horizontes das crianças e promovem um aprendizado mais significativo e envolvente.\n\nConclusão:\n\nAo implementar essas estratégias criativas em casa e na escola, os pais e educadores podem ajudar as crianças a desenvolver todo o seu potencial criativo e se tornarem aprendizes ativos e engajados.\n\nLembre-se de que cada criança é única, e é importante respeitar seu ritmo e estilo de aprendizado. Com amor, paciência e estímulo, podemos cultivar a criatividade e a imaginação das crianças, preparando-as para um futuro brilhante e cheio de possibilidades.",
       },
       {
-        subject: "",
-        text:
-          "A fase inicial da educação das crianças é crucial para o desenvolvimento de suas habilidades cognitivas, emocionais e sociais. Como pais e educadores, temos a responsabilidade de criar um ambiente estimulante que promova a criatividade e a imaginação dos pequenos.\n\n" +
-          "Neste guia, vamos explorar cinco estratégias criativas que podem ser facilmente implementadas em casa e na escola, para enriquecer o aprendizado na educação infantil.\n\n" +
-          "Promova um ambiente estimulante:\n\n" +
-          "1. Em casa e na escola, é importante criar um ambiente rico em estímulos que desperte a curiosidade e a imaginação das crianças. Brinquedos educativos, livros coloridos, música alegre e materiais artísticos podem transformar o espaço em um ambiente propício para a exploração e a descoberta.\n\n" +
-          "Invista no contato com a arte:\n\n" +
-          "2. Expor as crianças a diferentes formas de arte, como música, pintura, escultura e teatro, é uma maneira poderosa de estimular sua criatividade. Faça passeios a museus, galerias de arte e apresentações culturais, e incorpore atividades artísticas no dia a dia, como desenhar, pintar e fazer colagens. Essas experiências enriquecedoras ajudam as crianças a expressar suas emoções e ideias de forma criativa.\n\n" +
-          "Cuidado com o excesso de regras:\n\n" +
-          "3. É importante permitir que as crianças experimentem e explorem livremente, sem o peso das regras e restrições. Deixe que elas se sujem, brinquem livremente e expressem suas opiniões sem medo de julgamento. Um ambiente acolhedor e seguro é essencial para que as crianças se sintam à vontade para explorar e criar livremente.\n\n" +
-          "Converse e pergunte:\n\n" +
-          '4. Estimule a imaginação das crianças por meio de conversas e perguntas que as desafiem a pensar de forma criativa. Faça perguntas abertas que incentivem a reflexão e o debate, como "O que você acha que aconteceria se...?" ou "Como você faria isso de uma maneira diferente?". Ouça atentamente suas respostas e incentive-as a expressar suas ideias e opiniões.\n\n' +
-          "Fuja da rotina:\n\n" +
-          "5. Introduza variações na rotina diária das crianças para estimular sua curiosidade e imaginação. Planeje atividades diferentes, visite lugares novos, experimente novos alimentos e incentive as crianças a explorar o mundo ao seu redor. Essas experiências diversificadas ajudam a ampliar os horizontes das crianças e promovem um aprendizado mais significativo e envolvente.\n\n" +
-          "Conclusão:\n\n" +
-          "Ao implementar essas estratégias criativas em casa e na escola, os pais e educadores podem ajudar as crianças a desenvolver todo o seu potencial criativo e se tornarem aprendizes ativos e engajados.\n\n" +
-          "Lembre-se de que cada criança é única, e é importante respeitar seu ritmo e estilo de aprendizado. Com amor, paciência e estímulo, podemos cultivar a criatividade e a imaginação das crianças, preparando-as para um futuro brilhante e cheio de possibilidades.",
-        style: { textAlign: "justify" },
+        subtitle: "Artigo 2: Rotina de condomínios",
+        text: "A Arte da Convivência em Condomínios: Estratégias para uma Comunidade Harmoniosa\n\nMorar em condomínio oferece inúmeras vantagens, mas também requer um esforço conjunto para garantir uma convivência pacífica e agradável entre os vizinhos. Com o aumento do número de pessoas optando por esse estilo de moradia, é essencial que todos estejam comprometidos em cultivar um ambiente harmonioso.\n\nImportância da Boa Convivência:\n\nViver em conflito não é uma situação agradável. Melhorar a convivência e construí-la de forma saudável, seja com o vizinho de porta ou até aquele que está mais longe, é importante para manter a boa relação e evitar problemas. Ao viver ou frequentar um condomínio, é necessário pensar na coletividade, para assim tornar o dia a dia agradável e, quem sabe, poder até contar com o coleguismo em momentos difíceis.\n\nEstratégias para Melhorar a Convivência:\n\n1. Conheça seus Vizinhos: Uma das melhores maneiras de promover a harmonia no condomínio é estabelecer conexões pessoais com seus vizinhos.\n\n2. Participe Ativamente: Comparecer às reuniões do condomínio e se envolver nas decisões que afetam a comunidade é crucial.\n\n3. Respeite as Regras: O respeito às regras do condomínio é essencial para garantir uma convivência harmoniosa.\n\n4. Estimule a Comunicação: Uma comunicação aberta e transparente é fundamental para resolver conflitos e evitar mal-entendidos.\n\n5. Promova a Empatia: Cultivar empatia e compreensão em relação aos outros moradores é essencial para construir um ambiente de convivência saudável.\n\n6. Mantenha um Ambiente Limpo e Organizado: Respeitar os espaços comuns e manter as áreas compartilhadas limpas e organizadas contribui significativamente para uma convivência agradável.\n\n7. Demonstre Gentileza e Respeito: Pequenos gestos de gentileza podem fazer uma grande diferença no clima do condomínio.\n\n8. Esteja Aberto ao Diálogo: Aborde os conflitos de maneira respeitosa e construtiva, buscando soluções que beneficiem a todos.\n\n9. Valorize a Diversidade: Reconheça e celebre a diversidade de opiniões, estilos de vida e origens entre os moradores do condomínio.\n\n10. Contribua para o Bem-Estar Coletivo: Esteja sempre atento às necessidades da comunidade e procure maneiras de contribuir para o bem-estar coletivo.\n\nConclusão:\n\nAo adotar essas estratégias e cultivar uma cultura de respeito, empatia e colaboração, você estará contribuindo para criar um ambiente condominial verdadeiramente harmonioso e acolhedor. Lembre-se de que a convivência pacífica é um esforço conjunto e que cada morador desempenha um papel importante na construção de uma comunidade feliz e saudável.",
       },
       {
-        subject: "",
-        text: "\n\n—---------------------------------------------------------------------------------------------",
-      },
-
-      // ─────────────────────────────────────────────
-      // ARTIGO 2: Rotina de condomínios
-      // ─────────────────────────────────────────────
-      {
-        subject: "Artigo 2: Rotina de condomínios",
-        text: "A Arte da Convivência em Condomínios: Estratégias para uma Comunidade Harmoniosa",
-        style: { fontWeight: "bold", textAlign: "justify" },
+        subtitle: "Artigo 3: Vertentes do Marketing",
+        text: "Inbound Marketing: Estratégias que tornarão seu negócio memorável!\n\nIntrodução:\n\nBem-vindo ao fascinante mundo do Inbound Marketing, onde cada estratégia é uma oportunidade de criar experiências memoráveis que encantam e conquistam clientes.\n\nAo contrário do marketing tradicional, baseado em interrupções invasivas, o Inbound Marketing é uma jornada criativa que convida o público a participar ativamente da história da sua marca.\n\nNeste artigo, exploraremos como transformar suas estratégias em verdadeiras obras de arte do marketing, utilizando o poder do conteúdo, da narrativa e da interação para cativar seu público-alvo.\n\n1. Definição do Público-Alvo: Criando Personas Cativantes\n\nAssim como um escritor desenvolve personagens inesquecíveis, a definição do público-alvo no Inbound Marketing envolve a criação de personas que representam seus clientes ideais.\n\nPor exemplo, se você é uma empresa de moda, pode criar personas como a \"Ana Antenada\", uma jovem antenada nas últimas tendências da moda, ou o \"Carlos Consciente\", um homem preocupado com a sustentabilidade na moda.\n\nEssas personas ajudam a direcionar suas estratégias de conteúdo de maneira mais precisa e eficaz.\n\n2. Criação de Conteúdo Inspirador: Contando Histórias que Encantam\n\nNo coração do Inbound Marketing está a arte de contar histórias que emocionam e inspiram seu público. Seja através de blogs, vídeos, podcasts ou redes sociais, o objetivo é oferecer conteúdo valioso e envolvente que ressoe com suas personas.\n\nPor exemplo, se você é uma marca de viagens, pode criar vídeos inspiradores mostrando destinos exóticos ao redor do mundo, ou escrever blogs detalhando experiências de viagem únicas e inesquecíveis.\n\n3. Otimização para Mecanismos de Busca (SEO): Os Segredos dos Motores de Busca\n\nAssim como um detetive desvenda um mistério, o SEO no Inbound Marketing envolve descobrir os segredos dos mecanismos de busca para garantir que seu conteúdo seja encontrado pelo seu público-alvo.\n\nPor exemplo, se você é uma empresa de tecnologia, pode otimizar seu site com palavras-chave relevantes como \"inovação tecnológica\" ou \"soluções de software\", para atrair clientes em busca de soluções para seus desafios tecnológicos.\n\n4. Promoção nas Redes Sociais: Criando Comunidades Envolventes\n\nAs redes sociais são o palco perfeito para promover suas histórias e interagir diretamente com seu público-alvo. Ao compartilhar conteúdo relevante e participar ativamente de conversas e comunidades relacionadas ao seu nicho de mercado, você está criando uma comunidade em torno da sua marca.\n\nPor exemplo, se você é uma empresa de alimentos saudáveis, pode compartilhar receitas saudáveis e dicas de nutrição no Instagram, e promover discussões sobre saúde e bem-estar no Facebook.\n\n5. Automação de Marketing: A Orquestração da técnica correta\n\nPor fim, a automação de marketing permite orquestrar seus esforços de marketing de maneira eficiente e escalável. Ao configurar fluxos de trabalho automatizados, você pode enviar e-mails personalizados, segmentar seu público-alvo e acompanhar o engajamento dos seus contatos ao longo do tempo.\n\nPor exemplo, você pode criar uma série de e-mails automatizados para nutrir leads desde o primeiro contato até a conversão, oferecendo conteúdo relevante em cada estágio do funil de vendas.\n\nConclusão:\n\nEm conclusão, o Inbound Marketing oferece uma oportunidade única de transformar suas estratégias em experiências memoráveis que encantam e conquistam clientes. Ao adotar uma abordagem centrada no conteúdo, na narrativa e na interação, você está criando uma conexão genuína com seu público-alvo e construindo relacionamentos duradouros com sua marca. Então, que comece a jornada para transformar suas estratégias em verdadeiras obras de arte do marketing!",
       },
       {
-        subject: "",
-        text:
-          "Morar em condomínio oferece inúmeras vantagens, mas também requer um esforço conjunto para garantir uma convivência pacífica e agradável entre os vizinhos. Com o aumento do número de pessoas optando por esse estilo de moradia, é essencial que todos estejam comprometidos em cultivar um ambiente harmonioso.\n\n" +
-          "Importância da Boa Convivência:\n\n" +
-          "Viver em conflito não é uma situação agradável. Melhorar a convivência e construí-la de forma saudável, seja com o vizinho de porta ou até aquele que está mais longe, é importante para manter a boa relação e evitar problemas. Ao viver ou frequentar um condomínio, é necessário pensar na coletividade, para assim tornar o dia a dia agradável e, quem sabe, poder até contar com o coleguismo em momentos difíceis.\n\n" +
-          "Estratégias para Melhorar a Convivência:\n\n" +
-          "1. Conheça seus Vizinhos: Uma das melhores maneiras de promover a harmonia no condomínio é estabelecer conexões pessoais com seus vizinhos.\n\n" +
-          "2. Participe Ativamente: Comparecer às reuniões do condomínio e se envolver nas decisões que afetam a comunidade é crucial.\n\n" +
-          "3. Respeite as Regras: O respeito às regras do condomínio é essencial para garantir uma convivência harmoniosa.\n\n" +
-          "4. Estimule a Comunicação: Uma comunicação aberta e transparente é fundamental para resolver conflitos e evitar mal-entendidos.\n\n" +
-          "5. Promova a Empatia: Cultivar empatia e compreensão em relação aos outros moradores é essencial para construir um ambiente de convivência saudável.\n\n" +
-          "6. Mantenha um Ambiente Limpo e Organizado: Respeitar os espaços comuns e manter as áreas compartilhadas limpas e organizadas contribui significativamente para uma convivência agradável.\n\n" +
-          "7. Demonstre Gentileza e Respeito: Pequenos gestos de gentileza podem fazer uma grande diferença no clima do condomínio.\n\n" +
-          "8. Esteja Aberto ao Diálogo: Aborde os conflitos de maneira respeitosa e construtiva, buscando soluções que beneficiem a todos.\n\n" +
-          "9. Valorize a Diversidade: Reconheça e celebre a diversidade de opiniões, estilos de vida e origens entre os moradores do condomínio.\n\n" +
-          "10. Contribua para o Bem-Estar Coletivo: Esteja sempre atento às necessidades da comunidade e procure maneiras de contribuir para o bem-estar coletivo.\n\n" +
-          "Conclusão:\n\n" +
-          "Ao adotar essas estratégias e cultivar uma cultura de respeito, empatia e colaboração, você estará contribuindo para criar um ambiente condominial verdadeiramente harmonioso e acolhedor. Lembre-se de que a convivência pacífica é um esforço conjunto e que cada morador desempenha um papel importante na construção de uma comunidade feliz e saudável.",
-        style: { textAlign: "justify" },
+        subtitle: "Artigo 4: Agronegócios",
+        text: "Biogás: Uma Visão Abrangente do futuro da sustentabilidade!\n\nNo contexto atual, onde a sustentabilidade e a transição energética emergem como prioridades globais, torna-se imperativo explorar fontes de energia alternativas, renováveis e limpas. Entre essas opções está o biogás, uma promissora fonte de energia obtida a partir da digestão anaeróbica de biomassa orgânica.\n\nIntrodução\n\nEm um mundo cada vez mais consciente da necessidade de reduzir a dependência de combustíveis fósseis e mitigar os impactos ambientais, a busca por fontes de energia sustentáveis e renováveis é fundamental. Nesse contexto, o biogás desponta como uma solução viável e promissora, oferecendo uma alternativa eficiente e ambientalmente amigável para a produção de energia.\n\nO Que é Biogás e Como é Produzido?\n\nO biogás é uma mistura de gases, principalmente metano e dióxido de carbono, produzida através da digestão anaeróbica de materiais orgânicos diversos. Esse processo ocorre em condições controladas de ausência de oxigênio e temperatura adequada, e envolve a decomposição bacteriana da biomassa, resultando na produção de metano, um gás altamente combustível.\n\nPara entender melhor o processo de produção do biogás, é essencial compreender a digestão anaeróbica. Esse processo ocorre em várias etapas, começando com a decomposição da matéria orgânica em componentes mais simples, seguida pela fermentação ácida e, finalmente, pela produção de metano pelas bactérias archaea.\n\nConstituição de uma Usina de Biogás\n\nAs usinas de biogás são compostas por diferentes componentes, cada um desempenhando um papel crucial no processo de produção de energia. Entre esses componentes, destacam-se os digestores, onde ocorre a fermentação da biomassa, os sistemas de cogeração, responsáveis pela produção simultânea de energia elétrica e térmica, e os sistemas de atualização de biogás, que purificam o biogás para obter biometano, adequado para alimentação na rede de gás ou veículos.\n\nVantagens e Desvantagens do Biogás?\n\nO uso do biogás como fonte de energia apresenta uma série de vantagens significativas, tornando-o uma opção atrativa para a geração de energia renovável. Entre as principais vantagens estão:\n\n• Circularidade: O biogás permite a valorização de resíduos orgânicos, contribuindo para a gestão sustentável de resíduos e oferecendo uma solução eficaz para o descarte de resíduos animais.\n\n• Sustentabilidade: Como um combustível renovável, o biogás contribui para a redução das emissões de gases de efeito estufa e para a transição para uma matriz energética mais limpa e sustentável.\n\n• Eficiência Energética: As usinas de biogás oferecem uma fonte estável e contínua de energia, complementando outras formas de energia renovável e garantindo um suprimento confiável de eletricidade e calor.\n\nNo entanto, o uso do biogás também apresenta desafios e limitações, como o custo inicial de implantação de uma usina de biogás e a necessidade de infraestrutura adequada para o transporte e armazenamento da biomassa.\n\nCusto de uma Usina de Biogás\n\nO custo de uma usina de biogás pode variar significativamente, dependendo de uma série de fatores, como o tipo e quantidade de biomassa utilizada, o tamanho da planta, a tecnologia empregada e os incentivos governamentais disponíveis. É essencial realizar uma análise detalhada dos custos e benefícios associados à implantação de uma usina de biogás, considerando as características específicas de cada projeto e as condições do mercado.\n\nConclusão\n\nEm um cenário global de busca por fontes de energia limpas e renováveis, o biogás se destaca como uma alternativa promissora, oferecendo uma solução eficiente e sustentável para a geração de energia. Com o potencial de transformar resíduos orgânicos em uma fonte valiosa de energia, o biogás representa um passo importante em direção a um futuro mais verde e sustentável.",
       },
       {
-        subject: "",
-        text: "\n\n—---------------------------------------------------------------------------------------------",
-      },
-
-      // ─────────────────────────────────────────────
-      // ARTIGO 3: Vertentes do Marketing
-      // ─────────────────────────────────────────────
-      {
-        subject: "Artigo 3: Vertentes do Marketing",
-        text: "Inbound Marketing: Estratégias que tornarão seu negócio memorável!",
-        style: { fontWeight: "bold", textAlign: "justify" },
+        subtitle: "Artigo 5: Inovações da medicina",
+        text: "Medicina Integrativa: Uma Abordagem Holística para o Bem-Estar\n\nNa busca por uma abordagem mais completa e humanizada no tratamento de doenças, a medicina integrativa tem se destacado como uma opção promissora. Neste artigo, vamos explorar o que é a medicina integrativa, suas vantagens e como ela se diferencia da medicina tradicional.\n\nAlém disso, discutiremos como você pode incorporar práticas integrativas em sua vida e prática médica para alcançar um estado de saúde e bem-estar mais elevado.\n\nO Significado da Medicina Integrativa\n\nA medicina integrativa vai além do tratamento convencional, buscando compreender e tratar o paciente como um todo - corpo, mente e espírito. Em vez de simplesmente aliviar os sintomas de uma doença, essa abordagem procura identificar e abordar as causas subjacentes, considerando o contexto único de cada indivíduo.\n\nPor exemplo, um paciente que sofre de enxaquecas crônicas pode se beneficiar da medicina integrativa, que considera uma variedade de fatores contribuintes, como estresse, dieta, sono e saúde emocional. Com essa compreensão mais ampla, o plano de tratamento pode incluir não apenas medicamentos, mas também mudanças no estilo de vida e terapias complementares, como meditação e yoga.\n\nVantagens da Medicina Integrativa:\n\n• Relação Médico-Paciente Fortalecida: Na medicina integrativa, o paciente é visto como um parceiro ativo no seu próprio processo de cura. Os médicos não apenas tratam os sintomas, mas também capacitam os pacientes a assumirem o controle de sua saúde, oferecendo-lhes as ferramentas e o apoio de que precisam para fazer escolhas saudáveis.\n\n• Prevenção e Promoção da Saúde: Além de tratar doenças existentes, a medicina integrativa enfatiza a prevenção e a promoção da saúde. Isso pode incluir a adoção de hábitos de vida saudáveis, como uma dieta equilibrada, exercícios regulares, gestão do estresse e práticas de autocuidado, como meditação e yoga.\n\nDiferenças Entre Medicina Integrativa e Medicina Tradicional\n\nEnquanto a medicina tradicional se concentra principalmente no tratamento dos sintomas de uma doença, a medicina integrativa adota uma abordagem mais holística, considerando todos os aspectos da saúde de um indivíduo. Além disso, ela enfatiza a prevenção e a promoção da saúde, em vez de apenas tratar doenças existentes.\n\nMedicina Integrativa em Sua Vida e Prática Médica\n\nSe você está interessado em explorar a medicina integrativa em sua própria jornada de saúde, há muitas maneiras de começar. Comece educando-se sobre as diferentes práticas disponíveis e descubra quais ressoam melhor com você. Experimente diferentes abordagens e esteja aberto a novas experiências.\n\nPara os profissionais da saúde, incorporar a medicina integrativa em suas práticas pode ser uma maneira poderosa de oferecer cuidados mais abrangentes e personalizados aos pacientes. Ao combinar tratamentos convencionais com terapias complementares, os médicos podem ajudar os pacientes a alcançar resultados melhores e mais duradouros.\n\nConclusão\n\nEm um mundo onde o estresse, a ansiedade e as doenças crônicas são cada vez mais comuns, a medicina integrativa oferece uma abordagem holística e compassiva para a saúde e o bem-estar. Ao tratar o paciente como um todo e empoderá-lo a assumir o controle de sua própria saúde, podemos criar um futuro mais saudável e equilibrado para todos.",
       },
       {
-        subject: "",
-        text:
-          "Introdução:\n\n" +
-          "Bem-vindo ao fascinante mundo do Inbound Marketing, onde cada estratégia é uma oportunidade de criar experiências memoráveis que encantam e conquistam clientes.\n\n" +
-          "Ao contrário do marketing tradicional, baseado em interrupções invasivas, o Inbound Marketing é uma jornada criativa que convida o público a participar ativamente da história da sua marca.\n\n" +
-          "Neste artigo, exploraremos como transformar suas estratégias em verdadeiras obras de arte do marketing, utilizando o poder do conteúdo, da narrativa e da interação para cativar seu público-alvo.\n\n" +
-          "1. Definição do Público-Alvo: Criando Personas Cativantes\n\n" +
-          "Assim como um escritor desenvolve personagens inesquecíveis, a definição do público-alvo no Inbound Marketing envolve a criação de personas que representam seus clientes ideais.\n\n" +
-          'Por exemplo, se você é uma empresa de moda, pode criar personas como a "Ana Antenada", uma jovem antenada nas últimas tendências da moda, ou o "Carlos Consciente", um homem preocupado com a sustentabilidade na moda.\n\n' +
-          "Essas personas ajudam a direcionar suas estratégias de conteúdo de maneira mais precisa e eficaz.\n\n" +
-          "2. Criação de Conteúdo Inspirador: Contando Histórias que Encantam\n\n" +
-          "No coração do Inbound Marketing está a arte de contar histórias que emocionam e inspiram seu público. Seja através de blogs, vídeos, podcasts ou redes sociais, o objetivo é oferecer conteúdo valioso e envolvente que ressoe com suas personas.\n\n" +
-          "Por exemplo, se você é uma marca de viagens, pode criar vídeos inspiradores mostrando destinos exóticos ao redor do mundo, ou escrever blogs detalhando experiências de viagem únicas e inesquecíveis.\n\n" +
-          "3. Otimização para Mecanismos de Busca (SEO): Os Segredos dos Motores de Busca\n\n" +
-          "Assim como um detetive desvenda um mistério, o SEO no Inbound Marketing envolve descobrir os segredos dos mecanismos de busca para garantir que seu conteúdo seja encontrado pelo seu público-alvo.\n\n" +
-          'Por exemplo, se você é uma empresa de tecnologia, pode otimizar seu site com palavras-chave relevantes como "inovação tecnológica" ou "soluções de software", para atrair clientes em busca de soluções para seus desafios tecnológicos.\n\n' +
-          "4. Promoção nas Redes Sociais: Criando Comunidades Envolventes\n\n" +
-          "As redes sociais são o palco perfeito para promover suas histórias e interagir diretamente com seu público-alvo. Ao compartilhar conteúdo relevante e participar ativamente de conversas e comunidades relacionadas ao seu nicho de mercado, você está criando uma comunidade em torno da sua marca.\n\n" +
-          "Por exemplo, se você é uma empresa de alimentos saudáveis, pode compartilhar receitas saudáveis e dicas de nutrição no Instagram, e promover discussões sobre saúde e bem-estar no Facebook.\n\n" +
-          "5. Automação de Marketing: A Orquestração da técnica correta\n\n" +
-          "Por fim, a automação de marketing permite orquestrar seus esforços de marketing de maneira eficiente e escalável. Ao configurar fluxos de trabalho automatizados, você pode enviar e-mails personalizados, segmentar seu público-alvo e acompanhar o engajamento dos seus contatos ao longo do tempo.\n\n" +
-          "Por exemplo, você pode criar uma série de e-mails automatizados para nutrir leads desde o primeiro contato até a conversão, oferecendo conteúdo relevante em cada estágio do funil de vendas.\n\n" +
-          "Conclusão:\n\n" +
-          "Em conclusão, o Inbound Marketing oferece uma oportunidade única de transformar suas estratégias em experiências memoráveis que encantam e conquistam clientes. Ao adotar uma abordagem centrada no conteúdo, na narrativa e na interação, você está criando uma conexão genuína com seu público-alvo e construindo relacionamentos duradouros com sua marca. Então, que comece a jornada para transformar suas estratégias em verdadeiras obras de arte do marketing!",
-        style: { textAlign: "justify" },
-      },
-      {
-        subject: "",
-        text: "\n\n—---------------------------------------------------------------------------------------------",
-      },
-
-      // ─────────────────────────────────────────────
-      // ARTIGO 4: Agronegócios
-      // ─────────────────────────────────────────────
-      {
-        subject: "Artigo 4: Agronegócios",
-        text: "Biogás: Uma Visão Abrangente do futuro da sustentabilidade!",
-        style: { fontWeight: "bold", textAlign: "justify" },
-      },
-      {
-        subject: "",
-        text:
-          "No contexto atual, onde a sustentabilidade e a transição energética emergem como prioridades globais, torna-se imperativo explorar fontes de energia alternativas, renováveis e limpas. Entre essas opções está o biogás, uma promissora fonte de energia obtida a partir da digestão anaeróbica de biomassa orgânica.\n\n" +
-          "Introdução\n\n" +
-          "Em um mundo cada vez mais consciente da necessidade de reduzir a dependência de combustíveis fósseis e mitigar os impactos ambientais, a busca por fontes de energia sustentáveis e renováveis é fundamental. Nesse contexto, o biogás desponta como uma solução viável e promissora, oferecendo uma alternativa eficiente e ambientalmente amigável para a produção de energia.\n\n" +
-          "O Que é Biogás e Como é Produzido?\n\n" +
-          "O biogás é uma mistura de gases, principalmente metano e dióxido de carbono, produzida através da digestão anaeróbica de materiais orgânicos diversos. Esse processo ocorre em condições controladas de ausência de oxigênio e temperatura adequada, e envolve a decomposição bacteriana da biomassa, resultando na produção de metano, um gás altamente combustível.\n\n" +
-          "Para entender melhor o processo de produção do biogás, é essencial compreender a digestão anaeróbica. Esse processo ocorre em várias etapas, começando com a decomposição da matéria orgânica em componentes mais simples, seguida pela fermentação ácida e, finalmente, pela produção de metano pelas bactérias archaea.\n\n" +
-          "Constituição de uma Usina de Biogás\n\n" +
-          "As usinas de biogás são compostas por diferentes componentes, cada um desempenhando um papel crucial no processo de produção de energia. Entre esses componentes, destacam-se os digestores, onde ocorre a fermentação da biomassa, os sistemas de cogeração, responsáveis pela produção simultânea de energia elétrica e térmica, e os sistemas de atualização de biogás, que purificam o biogás para obter biometano, adequado para alimentação na rede de gás ou veículos.\n\n" +
-          "Vantagens e Desvantagens do Biogás?\n\n" +
-          "O uso do biogás como fonte de energia apresenta uma série de vantagens significativas, tornando-o uma opção atrativa para a geração de energia renovável. Entre as principais vantagens estão:\n\n" +
-          "• Circularidade: O biogás permite a valorização de resíduos orgânicos, contribuindo para a gestão sustentável de resíduos e oferecendo uma solução eficaz para o descarte de resíduos animais.\n\n" +
-          "• Sustentabilidade: Como um combustível renovável, o biogás contribui para a redução das emissões de gases de efeito estufa e para a transição para uma matriz energética mais limpa e sustentável.\n\n" +
-          "• Eficiência Energética: As usinas de biogás oferecem uma fonte estável e contínua de energia, complementando outras formas de energia renovável e garantindo um suprimento confiável de eletricidade e calor.\n\n" +
-          "No entanto, o uso do biogás também apresenta desafios e limitações, como o custo inicial de implantação de uma usina de biogás e a necessidade de infraestrutura adequada para o transporte e armazenamento da biomassa.\n\n" +
-          "Custo de uma Usina de Biogás\n\n" +
-          "O custo de uma usina de biogás pode variar significativamente, dependendo de uma série de fatores, como o tipo e quantidade de biomassa utilizada, o tamanho da planta, a tecnologia empregada e os incentivos governamentais disponíveis. É essencial realizar uma análise detalhada dos custos e benefícios associados à implantação de uma usina de biogás, considerando as características específicas de cada projeto e as condições do mercado.\n\n" +
-          "Conclusão\n\n" +
-          "Em um cenário global de busca por fontes de energia limpas e renováveis, o biogás se destaca como uma alternativa promissora, oferecendo uma solução eficiente e sustentável para a geração de energia. Com o potencial de transformar resíduos orgânicos em uma fonte valiosa de energia, o biogás representa um passo importante em direção a um futuro mais verde e sustentável.",
-        style: { textAlign: "justify" },
-      },
-      {
-        subject: "",
-        text: "\n\n—---------------------------------------------------------------------------------------------",
-      },
-
-      // ─────────────────────────────────────────────
-      // ARTIGO 5: Inovações da medicina
-      // ─────────────────────────────────────────────
-      {
-        subject: "Artigo 5: Inovações da medicina",
-        text: "Medicina Integrativa: Uma Abordagem Holística para o Bem-Estar",
-        style: { fontWeight: "bold", textAlign: "justify" },
-      },
-      {
-        subject: "",
-        text:
-          "Na busca por uma abordagem mais completa e humanizada no tratamento de doenças, a medicina integrativa tem se destacado como uma opção promissora. Neste artigo, vamos explorar o que é a medicina integrativa, suas vantagens e como ela se diferencia da medicina tradicional.\n\n" +
-          "Além disso, discutiremos como você pode incorporar práticas integrativas em sua vida e prática médica para alcançar um estado de saúde e bem-estar mais elevado.\n\n" +
-          "O Significado da Medicina Integrativa\n\n" +
-          "A medicina integrativa vai além do tratamento convencional, buscando compreender e tratar o paciente como um todo - corpo, mente e espírito. Em vez de simplesmente aliviar os sintomas de uma doença, essa abordagem procura identificar e abordar as causas subjacentes, considerando o contexto único de cada indivíduo.\n\n" +
-          "Por exemplo, um paciente que sofre de enxaquecas crônicas pode se beneficiar da medicina integrativa, que considera uma variedade de fatores contribuintes, como estresse, dieta, sono e saúde emocional. Com essa compreensão mais ampla, o plano de tratamento pode incluir não apenas medicamentos, mas também mudanças no estilo de vida e terapias complementares, como meditação e yoga.\n\n" +
-          "Vantagens da Medicina Integrativa:\n\n" +
-          "• Relação Médico-Paciente Fortalecida: Na medicina integrativa, o paciente é visto como um parceiro ativo no seu próprio processo de cura. Os médicos não apenas tratam os sintomas, mas também capacitam os pacientes a assumirem o controle de sua saúde, oferecendo-lhes as ferramentas e o apoio de que precisam para fazer escolhas saudáveis.\n\n" +
-          "• Prevenção e Promoção da Saúde: Além de tratar doenças existentes, a medicina integrativa enfatiza a prevenção e a promoção da saúde. Isso pode incluir a adoção de hábitos de vida saudáveis, como uma dieta equilibrada, exercícios regulares, gestão do estresse e práticas de autocuidado, como meditação e yoga.\n\n" +
-          "Diferenças Entre Medicina Integrativa e Medicina Tradicional\n\n" +
-          "Enquanto a medicina tradicional se concentra principalmente no tratamento dos sintomas de uma doença, a medicina integrativa adota uma abordagem mais holística, considerando todos os aspectos da saúde de um indivíduo. Além disso, ela enfatiza a prevenção e a promoção da saúde, em vez de apenas tratar doenças existentes.\n\n" +
-          "Medicina Integrativa em Sua Vida e Prática Médica\n\n" +
-          "Se você está interessado em explorar a medicina integrativa em sua própria jornada de saúde, há muitas maneiras de começar. Comece educando-se sobre as diferentes práticas disponíveis e descubra quais ressoam melhor com você. Experimente diferentes abordagens e esteja aberto a novas experiências.\n\n" +
-          "Para os profissionais da saúde, incorporar a medicina integrativa em suas práticas pode ser uma maneira poderosa de oferecer cuidados mais abrangentes e personalizados aos pacientes. Ao combinar tratamentos convencionais com terapias complementares, os médicos podem ajudar os pacientes a alcançar resultados melhores e mais duradouros.\n\n" +
-          "Conclusão\n\n" +
-          "Em um mundo onde o estresse, a ansiedade e as doenças crônicas são cada vez mais comuns, a medicina integrativa oferece uma abordagem holística e compassiva para a saúde e o bem-estar. Ao tratar o paciente como um todo e empoderá-lo a assumir o controle de sua própria saúde, podemos criar um futuro mais saudável e equilibrado para todos.",
-        style: { textAlign: "justify" },
-      },
-      {
-        subject: "",
-        text: "\n\n—---------------------------------------------------------------------------------------------",
-      },
-
-      // ─────────────────────────────────────────────
-      // ARTIGO 6: Temas diversos
-      // ─────────────────────────────────────────────
-      {
-        subject: "Artigo 6: Temas diversos",
-        text: "Gerenciamento de estoque: dicas de como fazer",
-        style: { fontWeight: "bold", textAlign: "justify" },
-      },
-      {
-        subject: "",
-        text:
-          "Você já ouviu falar de gerenciamento de estoque? Não?! Bem, algumas pessoas não sabem, mas a falta de atenção a essa área pode comprometer todo seu negócio!\n\n" +
-          "Em sua definição geral, o controle ou gerenciamento de estoque faz parte de um dos pilares que sustentam os resultados positivos de uma empresa. Isso porque, com essa ação é possível filtrar elementos primordiais na estrutura de trabalho, garantir eficiência, reduzir custos e perdas.\n\n" +
-          'Sei que deve está pensando "Como assim? Mas não é só separar tudo, entregar para o cliente nossos serviços? Para que fazer isso?".\n\n' +
-          "Bem, calma nessa hora...Neste conteúdo iremos apresentar tudo que você precisa saber para ter sucesso na sua empresa colocando o gerenciamento de estoque em prática. Confira abaixo o que te espera:\n\n" +
-          "• O que é o gerenciamento de estoque?\n" +
-          "• Quais as técnicas de gerenciamento de estoque?\n" +
-          "• Preço específico\n" +
-          "• Curva ABC\n" +
-          "• PEPS\n" +
-          "• UEPS\n" +
-          "• Custo médio\n" +
-          "• Ferramentas de gerenciamento de estoque!\n" +
-          "• Gestão de estoque no excel\n" +
-          "• Sistema de gerenciamento de estoque\n" +
-          "• Qual a importância do gerenciamento do estoque?\n\n" +
-          "Ficou com curiosidade? Pois vamos nessa!\n\n" +
-          "O que é o gerenciamento de estoque?\n\n" +
-          "De forma bem simples, o gerenciamento de estoque trata-se do monitoramento e análise dos materiais de uma empresa para garantir o funcionamento de todas as operações. Nele, normalmente faz se o controle de:\n\n" +
-          "1. Das entradas de mercadorias para armazenamento na própria empresa, enquanto aguardam serem vendidos.\n\n" +
-          "2. Das saídas de itens devido à venda e execuções de serviços.\n\n" +
-          "Viu como é importante fazer esse processo? Afinal, ter um estoque equilibrado faz com que seu negócio não perca clientes em função de falta de prestação sobre os produtos, sejam armazenados ou não.\n\n" +
-          "O fato é que tal comportamento existe desde o início do século até hoje, por exemplo caderninhos, listagens, sistemas avançados, nada está 100% seguro sem a realização de uma filtragem.\n\n" +
-          "E é por isso, que muitos empreendedores optaram por aderir às novas mudanças para simplesmente parar de perder dinheiro em todos os sentidos. Exemplos:\n\n" +
-          "Você pode reduzir as perdas por roubos, ou má armazenagem, já que com o trabalho de gerenciar o estoque terá a visibilidade do que entra e o que não está saindo.\n\n" +
-          "Outra possibilidade é poder criar promoções melhores, pois o processo em si te permite precificar os itens com mais facilidade. Isso porque no controle de estoque você consegue qualificar os produtos que vendem mais e os que não vendem ou estão fora da validade.\n\n" +
-          'A verdade é que aderir a este sistema facilita não só a estrutura interna e externa da comercialização dos seus serviços, mas também o tempo de "vida" do seu estabelecimento.\n\n' +
-          "Quais as técnicas de gerenciamento de estoque?\n\n" +
-          "Agora que você já sabe o que é gerenciamento de estoque, sua importância e alguns benefícios que o exercício dela gera no seu negócio. Vamos agora entender quais técnicas são fundamentais para que a logística e distribuição realmente funcione.\n\n" +
-          "Atenção: O tipo de setor que sua empresa está situada vai influenciar diretamente na melhor opção entre os métodos de controle de estoque. A escolha de uma estratégia correta de acordo com ramo garante vantagens como:\n\n" +
-          "• Otimização do espaço físico e custos;\n" +
-          "• Redução de prejuízos;\n" +
-          "• Organização de compras;\n" +
-          "• Eficiência na gestão.\n\n" +
-          "Para isso ser possível, confira a seguir quais opções de técnicas você pode aplicar:\n\n" +
-          "1. Preço Específico\n\n" +
-          "Nesta primeira técnica de gerenciamento de estoque, é ideal para produtos como carros e maquinários.\n\n" +
-          "O cálculo o preço específico da mercadoria irá direcionar o processo de baixa dos produtos em estoque após a venda, considerando que a soma total consiste apenas nos custos específicos dos itens.\n\n" +
-          "Nesse caso, não é recomendado para o varejo, pois necessita que haja pouca movimentação de venda e precificação.\n\n" +
-          "2. Curva ABC\n\n" +
-          "Aqui o objetivo é direcionar o seu gerenciamento nos itens mais significativos, classificados em A (Primordiais), B (Secundário) e C (outros).\n\n" +
-          "Isso ocorre, porque a Curva ABC é baseada no princípio de Pareto ou lei 80/20, segundo a qual 80% dos resultados são vindos de 20% dos seus esforços financeiros.\n\n" +
-          "Em suma, é um controle baseado na tificação do que vale mais e vale menos para seu comércio, nele, caso se encaixe, vai separar por prioridades em vendas, e lógico o que vai te fazer lucrar a curto prazo, médio e longo.\n\n" +
-          "3. PEPS\n\n" +
-          'O método de controle de estoque, o custo e o preço de venda das mercadorias são calculados conforme o custo do estoque mais antigo. Ou seja, "Primeiro que entra, é o primeiro que sai".\n\n' +
-          "No caso, a ordem cronológica é o que conduz a entrada dos produtos. Deste modo, a precificação dos produtos irá levar em conta seu custo de compra, bem como o que estimula a manutenção do lucro real e dando segurança no controle de estoque realizado pelo negócio.\n\n" +
-          "4. UEPS\n\n" +
-          'UEPS segue uma metodologia inversa ao PEPS: O cálculo do custo do estoque parte então dos últimos itens que chegaram ao depósito. Ou seja, "Último entrar, primeiro a sair".\n\n' +
-          "O único problema está na redução do valor tributável depois do exercício de cálculo. E isto a legislação fiscal brasileira não permite que seja utilizado pelas empresas. É muito comum nos Estados Unidos, na Alemanha e no México por causa dos processos produtivos.\n\n" +
-          "5. Custo médio\n\n" +
-          "O conceito é bem simples: o custo médio é basicamente o resultado da divisão do saldo financeiro pelo físico. Ou seja, o CM é alcançado pela soma do investimento, dividido pela quantidade de itens comprados e em estoque.\n\n" +
-          "Neste caso trouxemos um exemplo para que você possa visualizar melhor:\n\n" +
-          "Imagine que no início do mês seu mercado comprou 100 peças de um produto por R$500,00. Então, ainda no mesmo mês, você quis comprar mais 200 unidades do mesmo item, desta vez pagando R$1.150 por elas. Qual é o custo médio desta mercadoria?\n\n" +
-          "Para saber o resultado lembre-se que você deve somar os custos totais investidos no produto:\n\n" +
-          "R$ 500 + R$ 1.150 = R$ 1.650\n\n" +
-          "Logo a média é recalculada cada vez que você atualiza o seu estoque com este mesmo produto. Prático, não?\n\n" +
-          "Ferramentas de gerenciamento de estoque!\n\n" +
-          "Parabéns você chegou ao nível mais desejado pelos gestores: o momento de usar ferramentas para realizar uma das técnicas que apresentamos.\n\n" +
-          "Afinal, se você nunca fez gerenciamento de estoque antes vai precisar SIM de uma ajudinha em colocar em prática o processo que mais condiz com seu estabelecimento.\n\n" +
-          "Para te ajudar, iremos trazer 2 dicas de ferramentas que podem, e provavelmente irão te auxiliar no start de tudo. São elas:\n\n" +
-          "Gestão de estoque no Excel\n\n" +
-          "Esse é para os gestores tradicionais, onde vem a necessidade de fazer ele mesmo os passos do controle de estoque, para estes recomendamos o Excel. Através do Excel é possível obter tabelas prontas mais adequadas para seu negócio.\n\n" +
-          "Mas se quiser alguns direcionamentos de qual é a ideal para seus planos, fale conosco que podemos te ajudar nos procedimentos da criação da sua Planilha de Controle de Estoque.\n\n" +
-          "Resumidamente, essas são as etapas que você precisa fazer dentro do Excel:\n\n" +
-          "• Abrir ou baixar o excel no seu computador;\n" +
-          '• Criar uma "Nova" planilha;\n' +
-          '• Selecionar o campo de "busca" na tela;\n' +
-          '• Digite a palavra "estoque";\n' +
-          "• Lá aparecerá alguns modelos, você clicar no de sua preferência e que mais se adequa ao seu negócio;\n" +
-          "• Agora é só clicar no botão criar.\n\n" +
-          "Após essas ações, você já pode colocar e separar os dados mais importantes nos espaços. Confira:\n\n" +
-          "• Uma coluna de entradas;\n" +
-          "• Uma coluna de saídas;\n" +
-          "• O código do produto;\n" +
-          "• A descrição do produto;\n" +
-          "• A unidade de medida;\n" +
-          "• A classificação das datas (dia, mês e ano);\n" +
-          "• O registro da quantidade de unidades;\n" +
-          "• O registro do custa de cada unidade;\n" +
-          "• Incluir o nome e contato do fornecedor.\n\n" +
-          "Fora isso, é bacana informar datas, quantidades e valores no momento de entrada e saída de mercadorias, assim como o motivo da saída do item do estoque.\n\n" +
-          "Sendo assim, ao usar o Excel é necessário registrar as entradas e saídas dos produtos da empresa.\n\n" +
-          "*Inserir uma imagem de uma tabela pré-preenchida.\n\n" +
-          "Como mostrado na imagem acima, o gestor precisa preencher constantemente essas colunas para controlar o estoque e manter confiável e positiva sua função para tomar decisões.\n\n" +
-          "Nesse caso, as entradas e saídas de cada produto devem ser registradas separadamente para cada mês. Incluíndo:\n\n" +
-          "• Data de movimentação;\n" +
-          "• Nota fiscal do produto;\n" +
-          "• Qual é o produto;\n" +
-          "• Quanto entrou;\n" +
-          "• Quanto saiu.\n\n" +
-          "Na parte do controle de estoque, essa aba apresenta três fatores a serem preenchidos:\n\n" +
-          "• O estoque atual: Ajuda a identificar a quantidade de produtos armazenados.\n" +
-          "• O valor do estoque: Mostra o valor, em caso positivo, em dinheiro armazenados em produtos.\n" +
-          "• A necessidade de estoque: Informa se o produto é útil ou não.\n\n" +
-          "Portanto, ao final você obterá através do auxílio do Excel, mensalmente, as informações que se referem ao capital armazenado em forma de estoque.\n\n" +
-          "Sistema de gerenciamento de estoque\n\n" +
-          "Mas se você não é do tipo de pessoa que gosta de fazer as coisas manuais, e sim o que usa a tecnologia a seu favor, essa segunda dica é para você!\n\n" +
-          'Quando adotamos um sistema de controle de estoque, também conhecido ao pesquisar no google pela sigla WMS (do inglês "Warehouse Management System, ou Sistema de Gerenciamento de Armazéns"), a empresa consegue agilmente registro, a fiscalização e o gerenciamento da entrada e saída de produtos.\n\n' +
-          "Isso só ocorre, porque os fluxos manuais facilmente acarretam em erros. Isso pode significar perder recursos financeiros. Então, o ideal é implantar um software de gerenciamento efetivo. Menos riscos, mais praticidade e eficiência.\n\n" +
-          "E para te ajudar a escolher o melhor software, te apresentamos 3 tops sistemas mais utilizados no Brasil:\n\n" +
-          "1. Conta Azul\n\n" +
-          "Muito conhecida por todo Brasil, a Conta Azul é uma empresa referência no ramo de tecnologias e gestão operacional.\n\n" +
-          "Seu sistema de controle de estoque é totalmente online, com recursos de alimentação automática de estoque, compra de mercadorias, inventários e cadastro dos produtos.\n\n" +
-          "2. Linx\n\n" +
-          "Essa é a queridinha da tecnologia no Brasil. A marca, por ser especialista em software de gestão, garante integração entre redes, informações e operação.\n\n" +
-          "Para conferir se este é o sistema ideal para seu estabelecimento, sugerimos fazer um teste no site e escolher o seu segmento, assim já entende se o processo corresponde às suas expectativas.\n\n" +
-          "3. Totvs\n\n" +
-          "Assim como a Linx, a marca está presente em mais de 40 países, sendo líder de mercado na América Latina no setor de tecnologia brasileira.\n\n" +
-          "Seu ERP é 100% na nuvem e evolui conforme o crescimento do cliente. Por ter metodologia ampla, a Totvs oferece ferramentas tanto do setor logístico quanto da manutenção, entrega, gestão fiscal e gestão de projetos.\n\n" +
-          "Qual a importância do gerenciamento de estoque?\n\n" +
-          "Como já dissemos lá no início desse conteúdo, gerenciamento de estoque é responsável por manter as atividades da sua empresa em ordem.\n\n" +
-          "Ou seja, sem ela, não existiria a possibilidade de que a maioria das demandas fossem atendidas, inclusive em períodos de altas e baixas temporadas dos produtos.\n\n" +
-          "A gestão de estoque assegura que as operações otimizem os recursos disponíveis, reduzindo consequentemente os custos e aumentando a produtividade na gestão.\n\n" +
-          "E para provar que se você seguir tudo, pode ter 99,9% de chances de sucesso, trouxe algumas dicas para deixar seu controle de estoque mais eficiente. Confira!\n\n" +
-          "1 – Se ligue na Localização\n\n" +
-          "Não adianta nada se não souber escolher o local para armazenar suas mercadorias. A escolha correta e mais segura pode evitar desperdícios dos produtos.\n\n" +
-          "2 – Produtos nunca é demais\n\n" +
-          "Defina seu estoque de produtos que você irá trabalhar e suas quantidades. Assim, consegue não cair no maior males dos gestores: Falta de mercadorias. Lembre: melhor sobrar que faltar!\n\n" +
-          "3 – Layout\n\n" +
-          "Pensar em como as mercadorias serão, ajuda a reduzir tempo de entrega, movimentação entre sedes, e ainda, evita quebras e garante a qualidade do produto.\n\n" +
-          "Tudo é uma questão de ter uma imagem, formato e flexibilização vendável em comparação aos outros produtos.\n\n" +
-          "4 – Inventários\n\n" +
-          "Parece chato e às vezes desvalorizado, mas fazer inventários do seu estoque periodicamente pode te salvar de problemas futuros.\n\n" +
-          "É preciso prever tudo no seu estabelecimento, em todas as fases, antes mesmo que aconteça, e para isso servem os inventários.\n\n" +
-          "5 – Fornecedores\n\n" +
-          "Tenha fornecedores de confiança, que façam valer a pena os prazos acordados e deem boas condições de pagamento. Mas saiba manter o relacionamento entre as partes saudável.\n\n" +
-          "Viu só que gerenciamento de estoque não é um bicho de sete cabeças? É tanto que tem uma opção perfeita para os tradicionais e os gestores modernos. Mas óbvio que nada disso irá funcionar se não seguir os passos corretos, ein?\n\n" +
-          "Se ainda está inseguro e precisa de ajuda para fazer alguma das etapas que mencionamos neste artigo, peça AGORA uma consultoria conosco e turbine suas chances de sucesso!",
-        style: { textAlign: "justify" },
-      },
-      {
-        subject: "",
-        text: "\n\n—---------------------------------------------------------------------------------------------",
+        subtitle: "Artigo 6: Temas diversos",
+        text: "Gerenciamento de estoque: dicas de como fazer\n\nVocê já ouviu falar de gerenciamento de estoque? Não?! Bem, algumas pessoas não sabem, mas a falta de atenção a essa área pode comprometer todo seu negócio!\n\nEm sua definição geral, o controle ou gerenciamento de estoque faz parte de um dos pilares que sustentam os resultados positivos de uma empresa. Isso porque, com essa ação é possível filtrar elementos primordiais na estrutura de trabalho, garantir eficiência, reduzir custos e perdas.\n\nSei que deve está pensando \"Como assim? Mas não é só separar tudo, entregar para o cliente nossos serviços? Para que fazer isso?\".\n\nBem, calma nessa hora...Neste conteúdo iremos apresentar tudo que você precisa saber para ter sucesso na sua empresa colocando o gerenciamento de estoque em prática. Confira abaixo o que te espera:\n\n• O que é o gerenciamento de estoque?\n• Quais as técnicas de gerenciamento de estoque?\n• Preço específico\n• Curva ABC\n• PEPS\n• UEPS\n• Custo médio\n• Ferramentas de gerenciamento de estoque!\n• Gestão de estoque no excel\n• Sistema de gerenciamento de estoque\n• Qual a importância do gerenciamento do estoque?\n\nFicou com curiosidade? Pois vamos nessa!\n\nO que é o gerenciamento de estoque?\n\nDe forma bem simples, o gerenciamento de estoque trata-se do monitoramento e análise dos materiais de uma empresa para garantir o funcionamento de todas as operações. Nele, normalmente faz se o controle de:\n\n1. Das entradas de mercadorias para armazenamento na própria empresa, enquanto aguardam serem vendidos.\n\n2. Das saídas de itens devido à venda e execuções de serviços.\n\nViu como é importante fazer esse processo? Afinal, ter um estoque equilibrado faz com que seu negócio não perca clientes em função de falta de prestação sobre os produtos, sejam armazenados ou não.\n\nO fato é que tal comportamento existe desde o início do século até hoje, por exemplo caderninhos, listagens, sistemas avançados, nada está 100% seguro sem a realização de uma filtragem.\n\nE é por isso, que muitos empreendedores optaram por aderir às novas mudanças para simplesmente parar de perder dinheiro em todos os sentidos. Exemplos:\n\nVocê pode reduzir as perdas por roubos, ou má armazenagem, já que com o trabalho de gerenciar o estoque terá a visibilidade do que entra e o que não está saindo.\n\nOutra possibilidade é poder criar promoções melhores, pois o processo em si te permite precificar os itens com mais facilidade. Isso porque no controle de estoque você consegue qualificar os produtos que vendem mais e os que não vendem ou estão fora da validade.\n\nA verdade é que aderir a este sistema facilita não só a estrutura interna e externa da comercialização dos seus serviços, mas também o tempo de \"vida\" do seu estabelecimento.\n\nQuais as técnicas de gerenciamento de estoque?\n\nAgora que você já sabe o que é gerenciamento de estoque, sua importância e alguns benefícios que o exercício dela gera no seu negócio. Vamos agora entender quais técnicas são fundamentais para que a logística e distribuição realmente funcione.\n\nAtenção: O tipo de setor que sua empresa está situada vai influenciar diretamente na melhor opção entre os métodos de controle de estoque. A escolha de uma estratégia correta de acordo com ramo garante vantagens como:\n\n• Otimização do espaço físico e custos;\n• Redução de prejuízos;\n• Organização de compras;\n• Eficiência na gestão.\n\nPara isso ser possível, confira a seguir quais opções de técnicas você pode aplicar:\n\n1. Preço Específico\n\nNesta primeira técnica de gerenciamento de estoque, é ideal para produtos como carros e maquinários.\n\nO cálculo o preço específico da mercadoria irá direcionar o processo de baixa dos produtos em estoque após a venda, considerando que a soma total consiste apenas nos custos específicos dos itens.\n\nNesse caso, não é recomendado para o varejo, pois necessita que haja pouca movimentação de venda e precificação.\n\n2. Curva ABC\n\nAqui o objetivo é direcionar o seu gerenciamento nos itens mais significativos, classificados em A (Primordiais), B (Secundário) e C (outros).\n\nIsso ocorre, porque a Curva ABC é baseada no princípio de Pareto ou lei 80/20, segundo a qual 80% dos resultados são vindos de 20% dos seus esforços financeiros.\n\nEm suma, é um controle baseado na tificação do que vale mais e vale menos para seu comércio, nele, caso se encaixe, vai separar por prioridades em vendas, e lógico o que vai te fazer lucrar a curto prazo, médio e longo.\n\n3. PEPS\n\nO método de controle de estoque, o custo e o preço de venda das mercadorias são calculados conforme o custo do estoque mais antigo. Ou seja, \"Primeiro que entra, é o primeiro que sai\".\n\nNo caso, a ordem cronológica é o que conduz a entrada dos produtos. Deste modo, a precificação dos produtos irá levar em conta seu custo de compra, bem como o que estimula a manutenção do lucro real e dando segurança no controle de estoque realizado pelo negócio.\n\n4. UEPS\n\nUEPS segue uma metodologia inversa ao PEPS: O cálculo do custo do estoque parte então dos últimos itens que chegaram ao depósito. Ou seja, \"Último entrar, primeiro a sair\".\n\nO único problema está na redução do valor tributável depois do exercício de cálculo. E isto a legislação fiscal brasileira não permite que seja utilizado pelas empresas. É muito comum nos Estados Unidos, na Alemanha e no México por causa dos processos produtivos.\n\n5. Custo médio\n\nO conceito é bem simples: o custo médio é basicamente o resultado da divisão do saldo financeiro pelo físico. Ou seja, o CM é alcançado pela soma do investimento, dividido pela quantidade de itens comprados e em estoque.\n\nNeste caso trouxemos um exemplo para que você possa visualizar melhor:\n\nImagine que no início do mês seu mercado comprou 100 peças de um produto por R$500,00. Então, ainda no mesmo mês, você quis comprar mais 200 unidades do mesmo item, desta vez pagando R$1.150 por elas. Qual é o custo médio desta mercadoria?\n\nPara saber o resultado lembre-se que você deve somar os custos totais investidos no produto:\n\nR$ 500 + R$ 1.150 = R$ 1.650\n\nLogo a média é recalculada cada vez que você atualiza o seu estoque com este mesmo produto. Prático, não?\n\nFerramentas de gerenciamento de estoque!\n\nParabéns você chegou ao nível mais desejado pelos gestores: o momento de usar ferramentas para realizar uma das técnicas que apresentamos.\n\nAfinal, se você nunca fez gerenciamento de estoque antes vai precisar SIM de uma ajudinha em colocar em prática o processo que mais condiz com seu estabelecimento.\n\nPara te ajudar, iremos trazer 2 dicas de ferramentas que podem, e provavelmente irão te auxiliar no start de tudo. São elas:\n\nGestão de estoque no Excel\n\nEsse é para os gestores tradicionais, onde vem a necessidade de fazer ele mesmo os passos do controle de estoque, para estes recomendamos o Excel. Através do Excel é possível obter tabelas prontas mais adequadas para seu negócio.\n\nMas se quiser alguns direcionamentos de qual é a ideal para seus planos, fale conosco que podemos te ajudar nos procedimentos da criação da sua Planilha de Controle de Estoque.\n\nResumidamente, essas são as etapas que você precisa fazer dentro do Excel:\n\n• Abrir ou baixar o excel no seu computador;\n• Criar uma \"Nova\" planilha;\n• Selecionar o campo de \"busca\" na tela;\n• Digite a palavra \"estoque\";\n• Lá aparecerá alguns modelos, você clicar no de sua preferência e que mais se adequa ao seu negócio;\n• Agora é só clicar no botão criar.\n\nApós essas ações, você já pode colocar e separar os dados mais importantes nos espaços. Confira:\n\n• Uma coluna de entradas;\n• Uma coluna de saídas;\n• O código do produto;\n• A descrição do produto;\n• A unidade de medida;\n• A classificação das datas (dia, mês e ano);\n• O registro da quantidade de unidades;\n• O registro do custa de cada unidade;\n• Incluir o nome e contato do fornecedor.\n\nFora isso, é bacana informar datas, quantidades e valores no momento de entrada e saída de mercadorias, assim como o motivo da saída do item do estoque.\n\nSendo assim, ao usar o Excel é necessário registrar as entradas e saídas dos produtos da empresa.\n\n*Inserir uma imagem de uma tabela pré-preenchida.\n\nComo mostrado na imagem acima, o gestor precisa preencher constantemente essas colunas para controlar o estoque e manter confiável e positiva sua função para tomar decisões.\n\nNesse caso, as entradas e saídas de cada produto devem ser registradas separadamente para cada mês. Incluíndo:\n\n• Data de movimentação;\n• Nota fiscal do produto;\n• Qual é o produto;\n• Quanto entrou;\n• Quanto saiu.\n\nNa parte do controle de estoque, essa aba apresenta três fatores a serem preenchidos:\n\n• O estoque atual: Ajuda a identificar a quantidade de produtos armazenados.\n• O valor do estoque: Mostra o valor, em caso positivo, em dinheiro armazenados em produtos.\n• A necessidade de estoque: Informa se o produto é útil ou não.\n\nPortanto, ao final você obterá através do auxílio do Excel, mensalmente, as informações que se referem ao capital armazenado em forma de estoque.\n\nSistema de gerenciamento de estoque\n\nMas se você não é do tipo de pessoa que gosta de fazer as coisas manuais, e sim o que usa a tecnologia a seu favor, essa segunda dica é para você!\n\nQuando adotamos um sistema de controle de estoque, também conhecido ao pesquisar no google pela sigla WMS (do inglês \"Warehouse Management System, ou Sistema de Gerenciamento de Armazéns\"), a empresa consegue agilmente registro, a fiscalização e o gerenciamento da entrada e saída de produtos.\n\nIsso só ocorre, porque os fluxos manuais facilmente acarretam em erros. Isso pode significar perder recursos financeiros. Então, o ideal é implantar um software de gerenciamento efetivo. Menos riscos, mais praticidade e eficiência.\n\nE para te ajudar a escolher o melhor software, te apresentamos 3 tops sistemas mais utilizados no Brasil:\n\n1. Conta Azul\n\nMuito conhecida por todo Brasil, a Conta Azul é uma empresa referência no ramo de tecnologias e gestão operacional.\n\nSeu sistema de controle de estoque é totalmente online, com recursos de alimentação automática de estoque, compra de mercadorias, inventários e cadastro dos produtos.\n\n2. Linx\n\nEssa é a queridinha da tecnologia no Brasil. A marca, por ser especialista em software de gestão, garante integração entre redes, informações e operação.\n\nPara conferir se este é o sistema ideal para seu estabelecimento, sugerimos fazer um teste no site e escolher o seu segmento, assim já entende se o processo corresponde às suas expectativas.\n\n3. Totvs\n\nAssim como a Linx, a marca está presente em mais de 40 países, sendo líder de mercado na América Latina no setor de tecnologia brasileira.\n\nSeu ERP é 100% na nuvem e evolui conforme o crescimento do cliente. Por ter metodologia ampla, a Totvs oferece ferramentas tanto do setor logístico quanto da manutenção, entrega, gestão fiscal e gestão de projetos.\n\nQual a importância do gerenciamento de estoque?\n\nComo já dissemos lá no início desse conteúdo, gerenciamento de estoque é responsável por manter as atividades da sua empresa em ordem.\n\nOu seja, sem ela, não existiria a possibilidade de que a maioria das demandas fossem atendidas, inclusive em períodos de altas e baixas temporadas dos produtos.\n\nA gestão de estoque assegura que as operações otimizem os recursos disponíveis, reduzindo consequentemente os custos e aumentando a produtividade na gestão.\n\nE para provar que se você seguir tudo, pode ter 99,9% de chances de sucesso, trouxe algumas dicas para deixar seu controle de estoque mais eficiente. Confira!\n\n1 – Se ligue na Localização\n\nNão adianta nada se não souber escolher o local para armazenar suas mercadorias. A escolha correta e mais segura pode evitar desperdícios dos produtos.\n\n2 – Produtos nunca é demais\n\nDefina seu estoque de produtos que você irá trabalhar e suas quantidades. Assim, consegue não cair no maior males dos gestores: Falta de mercadorias. Lembre: melhor sobrar que faltar!\n\n3 – Layout\n\nPensar em como as mercadorias serão, ajuda a reduzir tempo de entrega, movimentação entre sedes, e ainda, evita quebras e garante a qualidade do produto.\n\nTudo é uma questão de ter uma imagem, formato e flexibilização vendável em comparação aos outros produtos.\n\n4 – Inventários\n\nParece chato e às vezes desvalorizado, mas fazer inventários do seu estoque periodicamente pode te salvar de problemas futuros.\n\nÉ preciso prever tudo no seu estabelecimento, em todas as fases, antes mesmo que aconteça, e para isso servem os inventários.\n\n5 – Fornecedores\n\nTenha fornecedores de confiança, que façam valer a pena os prazos acordados e deem boas condições de pagamento. Mas saiba manter o relacionamento entre as partes saudável.\n\nViu só que gerenciamento de estoque não é um bicho de sete cabeças? É tanto que tem uma opção perfeita para os tradicionais e os gestores modernos. Mas óbvio que nada disso irá funcionar se não seguir os passos corretos, ein?\n\nSe ainda está inseguro e precisa de ajuda para fazer alguma das etapas que mencionamos neste artigo, peça AGORA uma consultoria conosco e turbine suas chances de sucesso!",
       },
     ],
   },

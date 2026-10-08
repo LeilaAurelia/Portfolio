@@ -1,16 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap");
 
 :root {
-  --background: 30 25% 98%;
-  --foreground: 265 25% 18%;
-  --primary: 265 45% 32%;
-  --primary-foreground: 30 25% 98%;
-  --surface-warm: 35 25% 96%;
-  --muted-foreground: 265 20% 45%;
-  --border: 265 10% 88%;
-  --accent: 265 60% 42%;
-  --accent-light: 265 40% 92%;
-  --violet-glow: rgba(124, 58, 237, 0.08);
+  /* Linear Design System Colors - Light Mode */
+  --primary: 237 60% 59%;
+  --on-primary: 0 0% 100%;
+  --primary-hover: 237 60% 75%;
+  --primary-focus: 237 60% 59%;
+  --ink: 0 0% 10%;
+  --ink-muted: 0 0% 45%;
+  --ink-subtle: 0 0% 60%;
+  --ink-tertiary: 0 0% 70%;
+  --canvas: 0 0% 100%;
+  --surface-1: 220 10% 96%;
+  --surface-2: 220 10% 94%;
+  --surface-3: 220 10% 92%;
+  --surface-4: 220 10% 90%;
+  --hairline: 220 10% 88%;
+  --hairline-strong: 220 10% 80%;
+  --hairline-tertiary: 220 10% 75%;
+  --inverse-canvas: 0 0% 0%;
+  --inverse-surface-1: 240 10% 6%;
+  --inverse-surface-2: 240 10% 8%;
+  --inverse-ink: 0 0% 100%;
+  --brand-secure: 225 20% 66%;
+  --semantic-success: 140 60% 37%;
+  --semantic-overlay: 0 0% 0%;
+
+  /* Legacy variables for compatibility */
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --muted-foreground: var(--ink-muted);
+  --border: var(--hairline);
+  --accent: var(--primary);
+  --accent-light: var(--surface-1);
+  --violet-glow: rgba(94, 106, 210, 0.08);
 }
 
 @import "tailwindcss";
@@ -213,18 +236,16 @@ body::before {
 
 /* ─── Cards ──────────────────────────────────────── */
 .card-base {
-  background: white;
-  border: 1px solid hsl(var(--border));
-  border-radius: 1.25rem;
+  background: hsl(var(--surface-1));
+  border: 1px solid hsl(var(--hairline));
+  border-radius: 12px;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-base:hover {
-  border-color: hsl(var(--accent) / 0.3);
-  box-shadow:
-    0 20px 60px -15px hsl(var(--accent) / 0.12),
-    0 4px 20px -5px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
+  border-color: hsl(var(--hairline-strong));
+  background: hsl(var(--surface-2));
+  transform: translateY(-2px);
 }
 
 /* ─── Form Fields ────────────────────────────────── */
@@ -280,12 +301,10 @@ body::before {
 
 /* ─── Header / Scrolled pill ────────────────────── */
 .header-scrolled {
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: saturate(180%) blur(16px);
   -webkit-backdrop-filter: saturate(180%) blur(16px);
-  box-shadow:
-    0 1px 0 0 hsl(var(--border) / 0.6),
-    0 8px 32px -8px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid hsl(var(--hairline));
 }
 
 /* ─── Hero gradient orb ─────────────────────────── */
@@ -360,6 +379,48 @@ textarea {
 
 .card-base:hover .project-img {
   transform: scale(1.06);
+}
+
+/* ─── Portfolio cards (Yuri-style) ───────────────── */
+.portfolio-card {
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 28px -8px rgba(15, 23, 42, 0.18),
+    0 4px 10px -4px rgba(15, 23, 42, 0.08);
+}
+
+.portfolio-card-img {
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-card:hover .portfolio-card-img {
+  transform: scale(1.06);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* ─── Tag pill ───────────────────────────────────── */

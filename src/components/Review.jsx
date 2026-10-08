@@ -57,7 +57,7 @@ const Review = () => {
 
   return (
     <section id="reviews" className="pt-24 lg:pt-36 pb-20">
-      <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto mb-14">
+      <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-screen-2xl mx-auto">
         {/* Section header */}
         <div className="reveal-up flex items-center gap-3 mb-16">
           <span className="w-8 h-px bg-[hsl(var(--accent))]" />
@@ -65,15 +65,13 @@ const Review = () => {
           <span className="flex-1 h-px bg-[hsl(var(--border))]" />
         </div>
 
-        <div className="lg:flex lg:items-end lg:justify-between">
-          <div className="reveal-left max-w-lg mb-4 lg:mb-0">
-            <h2 className="font-serif-display text-[clamp(1.9rem,4vw,3rem)] leading-tight text-[hsl(var(--foreground))] mb-4">
-              Feedbacks recebidos
-            </h2>
-            <p className="text-[hsl(var(--muted-foreground))] text-[15px] leading-relaxed">
-              O que clientes e parceiros dizem sobre o trabalho desenvolvido.
-            </p>
-          </div>
+        <div className="reveal-left max-w-lg mb-12">
+          <h2 className="font-serif-display text-[clamp(1.9rem,4vw,3rem)] leading-tight text-[hsl(var(--foreground))] mb-4">
+            Feedbacks recebidos
+          </h2>
+          <p className="text-[hsl(var(--muted-foreground))] text-[15px] leading-relaxed">
+            O que clientes e parceiros dizem sobre o trabalho desenvolvido.
+          </p>
         </div>
       </div>
 

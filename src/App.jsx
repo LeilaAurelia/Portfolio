@@ -10,20 +10,29 @@ import "./index.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Skill from "./components/Skill";
 import Work from "./components/Work";
 import TodosProjetos from "./components/TodosProjetos";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-import { ReactLenis } from "lenis/react";
+import { ReactLenis, useLenis } from "lenis/react";
 
 // ── Observer separado que roda a cada troca de rota ──────────────
 function RouteObserver() {
   const location = useLocation();
+  const lenis = useLenis();
 
   useEffect(() => {
+    const scrollTarget = sessionStorage.getItem("scrollTo");
+    sessionStorage.removeItem("scrollTo");
+
+    if (location.pathname === "/" && scrollTarget) {
+      window.scrollTo(0, 0);
+    } else {
+      lenis?.scrollTo(0, { immediate: true });
+    }
+
     // Aguarda o React terminar de pintar os novos elementos
     const raf = requestAnimationFrame(() => {
       // 1. Re-inicializa animações de reveal para os novos elementos
@@ -48,14 +57,12 @@ function RouteObserver() {
       });
 
       // 2. Rola até a seção salva pelo Navbar (se houver)
-      const scrollTarget = sessionStorage.getItem("scrollTo");
-      if (scrollTarget) {
-        sessionStorage.removeItem("scrollTo");
+      if (location.pathname === "/" && scrollTarget) {
         // Pequeno delay para garantir que o layout está pronto
         setTimeout(() => {
           const el = document.getElementById(scrollTarget);
-          if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-          else window.scrollTo({ top: 0, behavior: "smooth" });
+          if (el) lenis?.scrollTo(el, { offset: 0 });
+          else lenis?.scrollTo(0, { immediate: true });
         }, 100);
       }
 
@@ -63,7 +70,7 @@ function RouteObserver() {
     });
 
     return () => cancelAnimationFrame(raf);
-  }, [location.pathname]);
+  }, [location.pathname, lenis]);
 
   return null;
 }
@@ -107,7 +114,6 @@ function App() {
               <main>
                 <Hero />
                 <About />
-                <Skill />
                 <Work />
                 <Review />
                 <Contact />

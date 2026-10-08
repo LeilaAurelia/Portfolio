@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const SkillCard = ({ label, desc, icon, classes }) => {
   return (
-    <div className={"card-base group p-7 rounded-2xl " + (classes || "")}>
+    <div className={"bg-white border border-gray-200 group p-7 rounded-2xl " + (classes || "")}>
       <div className="skill-icon-box mb-5">
         <span className="material-symbols-rounded text-[22px]">{icon}</span>
       </div>

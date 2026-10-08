@@ -9,6 +9,11 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (document.body.dataset.modalOpen === "true") {
+        lastScrollY.current = window.scrollY;
+        return;
+      }
+
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {

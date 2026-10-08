@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="reveal-up flex items-center gap-3 mb-8">
               <span className="w-8 h-px bg-[hsl(var(--accent))]" />
               <p className="section-label">
-                Copywriting & Marketing Estratégico
+                Social Media & Copywriting Estratégico
               </p>
             </div>
 
@@ -75,15 +75,14 @@ const Hero = () => {
                 className="not-italic"
                 style={{ color: "hsl(var(--accent))" }}
               >
-                posicionamentos
+                estratégias
               </em>
               <br />
-              que vendem.
+              que conectam e vendem.
             </h1>
 
             <p className="reveal-up delay-200 text-[hsl(var(--muted-foreground))] text-lg leading-relaxed mb-10 max-w-lg">
-              Estratégia, narrativa e marketing digital para marcas que querem
-              autoridade, conexão e crescimento sustentável.
+              SEO, copywriting, análise de métricas, campanhas de mídia paga e Inbound Marketing — criando estratégias que conectam marcas e pessoas, gerando autoridade e vendas.
             </p>
 
             <div className="reveal-up delay-300 flex flex-wrap gap-4">
@@ -146,9 +145,9 @@ const Hero = () => {
               />
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/picture/Screenshot_1.png"
-                  alt="Copywriting editorial"
-                  className="w-full h-[520px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  src="/assets/picture/Perfil-Photoroom.png"
+                  alt="Leila Aurelia Falcão de Lima"
+                  className="w-full h-[520px] object-cover"
                 />
                 {/* Overlay badge */}
                 <div
@@ -164,7 +163,7 @@ const Hero = () => {
                       Especialista em
                     </p>
                     <p className="text-sm font-semibold text-[hsl(var(--foreground))]">
-                      Copy Estratégica & Branding
+                      Social Media & Copywriting
                     </p>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-[hsl(var(--accent))] grid place-items-center text-white shrink-0">
