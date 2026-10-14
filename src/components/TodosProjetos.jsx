@@ -273,7 +273,7 @@ const projects = [
     projectLink: "https://www.instagram.com/p/CsJGQfxsClR/",
   },
   {
-    imgSrc: "/assets/projects/faturamento+fidelização.png",
+    imgSrc: "/assets/projects/zenit-faturamento-fidelizacao.png",
     cardType: "gmail",
     title: "Faturamento + fidelização = Zenit no seu portfólio",
     description: "Campanha de email com foco em fidelização e oportunidades de faturamento.",

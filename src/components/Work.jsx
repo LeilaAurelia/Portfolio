@@ -100,7 +100,7 @@ const VideoCard = ({ video }) => {
 
   return (
     <article className="portfolio-card min-w-0 w-full overflow-hidden rounded-xl border border-gray-200/80 bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
-      <div className="aspect-[9/16] overflow-hidden bg-black">
+      <div className="aspect-[9/15] overflow-hidden bg-black">
         <iframe
           src={embedUrl}
           title={video.title}

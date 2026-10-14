@@ -62,9 +62,8 @@ const Hero = () => {
           {/* TEXT */}
           <div className="max-w-2xl">
             <div className="reveal-up flex items-center gap-3 mb-8">
-              <span className="w-8 h-px bg-[hsl(var(--accent))]" />
               <p className="section-label">
-                Social Media & Copywriting Estratégico
+                Marketing e Copywriter
               </p>
             </div>
 
@@ -82,7 +81,7 @@ const Hero = () => {
             </h1>
 
             <p className="reveal-up delay-200 text-[hsl(var(--muted-foreground))] text-lg leading-relaxed mb-10 max-w-lg">
-              SEO, copywriting, análise de métricas, campanhas de mídia paga e Inbound Marketing — criando estratégias que conectam marcas e pessoas, gerando autoridade e vendas.
+              Estratégia digital baseada em dados, narrativa e conversão. Uno SEO, copywriting e inteligência de métricas para criar campanhas off e online (B2B/B2C) que atraem o público certo, fortalecem o posicionamento da sua marca e aceleram vendas.
             </p>
 
             <div className="reveal-up delay-300 flex flex-wrap gap-4">
@@ -163,7 +162,7 @@ const Hero = () => {
                       Especialista em
                     </p>
                     <p className="text-sm font-semibold text-[hsl(var(--foreground))]">
-                      Social Media & Copywriting
+                      Marketing e Copywriter
                     </p>
                   </div>
                   <div className="w-8 h-8 rounded-full bg-[hsl(var(--accent))] grid place-items-center text-white shrink-0">
